@@ -1,7 +1,9 @@
 var namespaces_dup =
 [
+    [ "a1z26", "d8/d2a/namespacea1z26.html", null ],
     [ "abbreviation", "d0/df8/namespaceabbreviation.html", null ],
     [ "activations", "d5/d39/namespaceactivations.html", null ],
+    [ "atbash", "de/db3/namespaceatbash.html", null ],
     [ "aystar_search", "db/ddc/namespaceaystar__search.html", null ],
     [ "backtracking", "db/dc0/namespacebacktracking.html", [
       [ "n_queens", null, [
@@ -170,6 +172,7 @@ var namespaces_dup =
     [ "random_pivot_quick_sort", "de/d6b/namespacerandom__pivot__quick__sort.html", null ],
     [ "range_queries", "dd/d69/namespacerange__queries.html", "dd/d69/namespacerange__queries" ],
     [ "rat_maze", "d9/d60/namespacerat__maze.html", null ],
+    [ "reverse_binary_tree", "dc/dc5/namespacereverse__binary__tree.html", null ],
     [ "runge_kutta", "d2/de7/namespacerunge__kutta.html", null ],
     [ "saddleback", "d0/dda/namespacesaddleback.html", null ],
     [ "search", "d9/dca/namespacesearch.html", "d9/dca/namespacesearch" ],
@@ -264,6 +267,14 @@ var namespaces_dup =
     [ "subarray_sum", "df/d74/namespacesubarray__sum.html", null ],
     [ "sublist_search", "d9/def/namespacesublist__search.html", null ],
     [ "Subsets", "de/d95/namespace_subsets.html", null ],
+    [ "tests", "d9/df4/namespacetests.html", [
+      [ "test1", "d9/df4/namespacetests.html#a167c24bd817469ae47358d12e034f2d5", null ],
+      [ "test2", "d9/df4/namespacetests.html#abdd77344d4af8fd56d14a5cabbf2f669", null ],
+      [ "test3", "d9/df4/namespacetests.html#aa515639572647508b94986489aab6d76", null ],
+      [ "test4", "d9/df4/namespacetests.html#a2b9769e44683dcb67fe1083ad91e134d", null ],
+      [ "test5", "d9/df4/namespacetests.html#af7b81d7a1534216af6a36a80135beb86", null ],
+      [ "test6", "d9/df4/namespacetests.html#aacafde185abd8670abee51157f273dc2", null ]
+    ] ],
     [ "tree_234", "d6/dab/namespacetree__234.html", null ],
     [ "trie_operations", "df/d8e/namespacetrie__operations.html", null ],
     [ "trie_using_hashmap", "d7/d0a/namespacetrie__using__hashmap.html", null ],
