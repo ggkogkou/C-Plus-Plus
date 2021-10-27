@@ -135,16 +135,16 @@ var NAVTREEINDEX =
 "cpp/thread/lock.html",
 "d1/d83/classuint256__t.html#aa0e532832640e9fe273b35c481b18963",
 "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a9f1cb54ed09fde931bf3220d75ee4c57",
-"d4/d45/gcd__recursive__euclidean_8cpp.html#ae48807fa2b7000afae599e67f327545e",
-"d5/d67/complex__numbers_8cpp.html",
-"d6/d57/array__right__rotation_8cpp.html#a1bfb8711f49e591eb168ccaa3df6fb86",
-"d8/d28/classrange__queries_1_1per_seg_tree.html",
-"d9/d03/namespacestring__search.html#a21c673d56cbf67b1d2ee4d869185b7d9",
-"da/d50/count__of__trailing__ciphers__in__factorial__n_8cpp.html#a0d5e1d651d0d30bd682f176d8f2b83d0",
-"db/d9a/classuint128__t.html#a1d390c6ea5450680dcaff341235f0fed",
-"dd/d1c/classhash__chain.html#a55aa5c6753cb8853152d469c375d946a",
-"de/d75/qr__eigen__values_8cpp.html",
-"dir_12552d7fa429bf94a2e32e5cf39f7e69.html"
+"d4/d3e/n__queens_8cpp.html#a0dbd7af47d87f0b956609fe9e3288ecb",
+"d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html#a9adb4639a0797e94a3e556b6b902c088",
+"d6/d4a/addition__rule_8cpp.html#a4adfd055c758546456d440ee9133555d",
+"d7/def/trie__multiple__search_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089",
+"d8/dfd/structoperations__on__datastructures_1_1reverse__binary__tree_1_1_node.html#aeb01a65e51df1e3bc5296cde8477c352",
+"da/d4b/depth__first__search__with__stack_8cpp.html#a5738da9f508f6a9e87f123c9fb6f2ea9",
+"db/d9a/classuint128__t.html#a07945fe010079a35e18812636d5c70c3",
+"dd/d12/vigenere__cipher_8cpp.html#a6bd3880ea6820c232c1eddf47553c257",
+"de/d6a/knuth__morris__pratt_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"df/def/power__for__huge__numbers_8cpp.html#aa141a7904f0c4668bac112d652a3acf9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

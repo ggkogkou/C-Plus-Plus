@@ -179,6 +179,7 @@ var namespaces_dup =
     [ "selection_sort_recursive", "df/d4a/namespaceselection__sort__recursive.html", null ],
     [ "SHA", "de/dd3/namespace_s_h_a.html", null ],
     [ "shortest_common_supersequence", "d3/deb/namespaceshortest__common__supersequence.html", null ],
+    [ "simpson_method", "d3/d6d/namespacesimpson__method.html", null ],
     [ "sorting", "d5/d91/namespacesorting.html", [
       [ "cycle_sort", null, [
         [ "cycleSort", "de/d07/cycle__sort_8cpp.html#ae79a9d247691fce0d655fce75f1c04fa", null ]
