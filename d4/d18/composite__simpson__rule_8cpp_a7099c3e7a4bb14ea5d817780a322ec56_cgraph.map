@@ -1,7 +1,0 @@
-<map id="numerical_methods::simpson_method::evaluate_by_simpson" name="numerical_methods::simpson_method::evaluate_by_simpson">
-<area shape="rect" id="node1" title="Calculate integral or assert if integral is not a number (Nan)" alt="" coords="5,67,187,123"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map/at.html#" title=" " alt="" coords="245,5,337,32"/>
-<area shape="rect" id="node3" href="$d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001" title=" " alt="" coords="272,56,311,83"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/map/insert.html#" title=" " alt="" coords="235,107,348,133"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/isnan.html#" title=" " alt="" coords="252,157,331,184"/>
-</map>
