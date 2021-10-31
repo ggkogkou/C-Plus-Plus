@@ -22,5 +22,6 @@ var searchData=
   ['subarray_5fsum_19',['subarray_sum',['../df/d74/namespacesubarray__sum.html',1,'']]],
   ['sublist_5fsearch_20',['sublist_search',['../d9/def/namespacesublist__search.html',1,'']]],
   ['subsets_21',['Subsets',['../de/d95/namespace_subsets.html',1,'']]],
-  ['this_5fthread_22',['this_thread',['http://en.cppreference.com/w/d7/dbf/namespacestd_1_1this__thread.html',0,'std']]]
+  ['sudoku_5fsolver_22',['sudoku_solver',['../d8/d9f/namespacesudoku__solver.html',1,'']]],
+  ['this_5fthread_23',['this_thread',['http://en.cppreference.com/w/d7/dbf/namespacestd_1_1this__thread.html',0,'std']]]
 ];
