@@ -1,9 +1,9 @@
 var composite__simpson__rule_8cpp =
 [
-    [ "f", "d4/d18/composite__simpson__rule_8cpp.html#a4251b4df4748a0b9c43a48f61bdd2397", null ],
-    [ "g", "d4/d18/composite__simpson__rule_8cpp.html#a2f67508d5f392b0321772169342c98ad", null ],
-    [ "k", "d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442", null ],
-    [ "l", "d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a", null ],
-    [ "main", "d4/d18/composite__simpson__rule_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627", null ],
-    [ "test", "d4/d18/composite__simpson__rule_8cpp.html#a2ae48a41e43dc6ab11b962742349646e", null ]
+    [ "evaluate_by_simpson", "d4/d18/composite__simpson__rule_8cpp.html#a4dd31f153726d493f7b1ea7ffc22eceb", null ],
+    [ "f", "d4/d18/composite__simpson__rule_8cpp.html#a3de2b7b41a8e4b07da05298510d17ed2", null ],
+    [ "g", "d4/d18/composite__simpson__rule_8cpp.html#ac84831571c8f3d0bca83c1747a32e8d6", null ],
+    [ "k", "d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc", null ],
+    [ "l", "d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529", null ],
+    [ "main", "d4/d18/composite__simpson__rule_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627", null ]
 ];

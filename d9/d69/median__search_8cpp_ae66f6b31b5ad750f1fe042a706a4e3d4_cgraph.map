@@ -1,4 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,56,32"/>
-<area shape="rect" id="node2" href="$d9/d69/median__search_8cpp.html#ae1a3968e7947464bee7714f6d43b7002" title=" " alt="" coords="104,5,148,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node2" href="$d9/d69/median__search_8cpp.html#ae1a3968e7947464bee7714f6d43b7002" title=" " alt="" coords="104,31,148,57"/>
+<area shape="rect" id="node3" href="$d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc" title="Another test function." alt="" coords="196,31,235,57"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="283,5,355,32"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="283,56,354,83"/>
 </map>

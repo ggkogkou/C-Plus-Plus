@@ -1,7 +1,10 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,56,57"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="135,5,207,32"/>
-<area shape="rect" id="node3" href="$d9/d03/namespacestring__search.html#a26a58225ce7d3fa9d4c2f5349a65ed93" title=" " alt="" coords="104,56,239,83"/>
-<area shape="rect" id="node4" href="$d9/d03/namespacestring__search.html#a996573527312d5255e1495b879e8a34f" title=" " alt="" coords="287,19,456,61"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="504,56,615,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,56,73"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="135,21,207,47"/>
+<area shape="rect" id="node3" href="$d9/d03/namespacestring__search.html#a26a58225ce7d3fa9d4c2f5349a65ed93" title=" " alt="" coords="104,71,237,98"/>
+<area shape="rect" id="node4" href="$d9/d03/namespacestring__search.html#a996573527312d5255e1495b879e8a34f" title=" " alt="" coords="285,5,451,47"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="499,30,611,57"/>
+<area shape="rect" id="node6" href="$d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc" title="Another test function." alt="" coords="349,122,387,149"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="519,97,591,123"/>
+<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="519,147,590,174"/>
 </map>

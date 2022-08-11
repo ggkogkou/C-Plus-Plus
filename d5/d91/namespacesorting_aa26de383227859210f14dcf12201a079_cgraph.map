@@ -1,4 +1,6 @@
 <map id="sorting::merge" name="sorting::merge">
-<area shape="rect" id="node1" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="5,5,112,32"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="160,5,240,32"/>
+<area shape="rect" id="node1" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="5,31,111,57"/>
+<area shape="rect" id="node2" href="$d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529" title="Another test function." alt="" coords="179,5,218,32"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="159,56,239,83"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="287,5,352,32"/>
 </map>

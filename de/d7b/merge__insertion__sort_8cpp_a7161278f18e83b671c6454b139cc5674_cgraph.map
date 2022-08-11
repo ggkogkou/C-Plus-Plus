@@ -1,9 +1,14 @@
 <map id="sorting::merge_insertion::mergeSort" name="sorting::merge_insertion::mergeSort">
-<area shape="rect" id="node1" title="Final combined algorithm. Algorithm utilizes ::sorting::merge_insertion::InsertionSort if window leng..." alt="" coords="5,88,171,129"/>
-<area shape="rect" id="node2" href="$de/d7b/merge__insertion__sort_8cpp.html#a0cba4fbf287ab8cb978ed7f8fef886b1" title="Insertion merge algorithm." alt="" coords="219,29,384,71"/>
-<area shape="rect" id="node4" href="$d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="248,95,355,122"/>
-<area shape="rect" id="node6" href="$d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7" title=" " alt="" coords="259,170,343,197"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/data.html#" title=" " alt="" coords="432,37,543,63"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="447,95,527,122"/>
-<area shape="rect" id="node7" href="$d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73" title=" " alt="" coords="457,170,517,197"/>
+<area shape="rect" id="node1" title="Final combined algorithm. Algorithm utilizes ::sorting::merge_insertion::InsertionSort if window leng..." alt="" coords="5,92,167,133"/>
+<area shape="rect" id="node2" href="$de/d7b/merge__insertion__sort_8cpp.html#a0cba4fbf287ab8cb978ed7f8fef886b1" title="Insertion merge algorithm." alt="" coords="215,29,376,71"/>
+<area shape="rect" id="node4" href="$d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="243,99,348,126"/>
+<area shape="rect" id="node8" href="$d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7" title=" " alt="" coords="254,183,337,210"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/array/data.html#" title=" " alt="" coords="424,31,535,58"/>
+<area shape="rect" id="node5" href="$d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529" title="Another test function." alt="" coords="583,183,621,210"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="439,133,519,159"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="673,183,738,210"/>
+<area shape="rect" id="node9" href="$d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73" title=" " alt="" coords="450,234,509,261"/>
+<area shape="rect" id="node10" href="$d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc" title="Another test function." alt="" coords="583,234,621,261"/>
+<area shape="rect" id="node11" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="669,234,741,261"/>
+<area shape="rect" id="node12" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="670,285,741,311"/>
 </map>

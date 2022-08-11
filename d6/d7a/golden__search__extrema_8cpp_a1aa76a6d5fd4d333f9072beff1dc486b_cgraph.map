@@ -1,6 +1,8 @@
 <map id="get_minima" name="get_minima">
-<area shape="rect" id="node1" title="Get the minima of a function in the given interval. To get the maxima, simply negate the function...." alt="" coords="5,71,96,98"/>
-<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/infinity.html#" title=" " alt="" coords="144,5,276,47"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="175,71,245,98"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="171,122,249,149"/>
+<area shape="rect" id="node1" title="Get the minima of a function in the given interval. To get the maxima, simply negate the function...." alt="" coords="5,85,95,112"/>
+<area shape="rect" id="node2" href="$d4/d18/composite__simpson__rule_8cpp.html#a3de2b7b41a8e4b07da05298510d17ed2" title="A function f(x) that will be used to test the method." alt="" coords="189,5,228,32"/>
+<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="323,56,393,83"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/types/numeric_limits/infinity.html#" title=" " alt="" coords="143,107,275,149"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="169,173,248,200"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="325,5,391,32"/>
 </map>
