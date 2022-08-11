@@ -121,7 +121,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aae407a2a13362c4c64fbe509ff325978"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db1/binomial__calculate_8cpp.html#aae407a2a13362c4c64fbe509ff325978">math::binomial::calculate</a> (int32_t n, int32_t <a class="el" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>)</td></tr>
+<tr class="memitem:aae407a2a13362c4c64fbe509ff325978"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db1/binomial__calculate_8cpp.html#aae407a2a13362c4c64fbe509ff325978">math::binomial::calculate</a> (int32_t n, int32_t k)</td></tr>
 <tr class="memdesc:aae407a2a13362c4c64fbe509ff325978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate binomial coefficients.  <a href="../../d8/db1/binomial__calculate_8cpp.html#aae407a2a13362c4c64fbe509ff325978">More...</a><br /></td></tr>
 <tr class="separator:aae407a2a13362c4c64fbe509ff325978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a483bb8ccf42aaf7375a83e91490eda1e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db1/binomial__calculate_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e">tests</a> ()</td></tr>
@@ -172,27 +172,26 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>binomial coefficient for n and k </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   32</span>                                       {</div>
 <div class="line"><span class="lineno">   33</span>    <span class="comment">// basic cases</span></div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> &gt; (n / 2))</div>
-<div class="line"><span class="lineno">   35</span>        <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> = n - <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>;</div>
-<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> == 1)</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">if</span> (k &gt; (n / 2))</div>
+<div class="line"><span class="lineno">   35</span>        k = n - k;</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">if</span> (k == 1)</div>
 <div class="line"><span class="lineno">   37</span>        <span class="keywordflow">return</span> n;</div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> == 0)</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">if</span> (k == 0)</div>
 <div class="line"><span class="lineno">   39</span>        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><span class="lineno">   40</span> </div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = 1;</div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">for</span> (int32_t i = 1; i &lt;= <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>; ++i) {</div>
-<div class="line"><span class="lineno">   43</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> *= n - <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> + i;</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">for</span> (int32_t i = 1; i &lt;= k; ++i) {</div>
+<div class="line"><span class="lineno">   43</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> *= n - k + i;</div>
 <div class="line"><span class="lineno">   44</span>        <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> /= i;</div>
 <div class="line"><span class="lineno">   45</span>    }</div>
 <div class="line"><span class="lineno">   46</span> </div>
 <div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><span class="lineno">   48</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d50f1b8eb533b54721812d16a3699cc"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:170</div></div>
 <div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:76</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/db1/binomial__calculate_8cpp_aae407a2a13362c4c64fbe509ff325978_cgraph.svg" width="384" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/db1/binomial__calculate_8cpp_aae407a2a13362c4c64fbe509ff325978_cgraph.svg" width="178" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -242,9 +241,9 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   85</span>    }</div>
 <div class="line"><span class="lineno">   86</span> </div>
 <div class="line"><span class="lineno">   87</span>    int32_t n = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atoi.html">atoi</a>(argv[1]);</div>
-<div class="line"><span class="lineno">   88</span>    int32_t <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atoi.html">atoi</a>(argv[2]);</div>
+<div class="line"><span class="lineno">   88</span>    int32_t k = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/byte/atoi.html">atoi</a>(argv[2]);</div>
 <div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="../../d8/db1/binomial__calculate_8cpp.html#aae407a2a13362c4c64fbe509ff325978">math::binomial::calculate</a>(n, <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code hl_function" href="../../d8/db1/binomial__calculate_8cpp.html#aae407a2a13362c4c64fbe509ff325978">math::binomial::calculate</a>(n, k) &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><span class="lineno">   91</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   92</span>}</div>
 <div class="ttc" id="aatoi_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/atoi.html">std::atoi</a></div><div class="ttdeci">T atoi(T... args)</div></div>
@@ -255,7 +254,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/db1/binomial__calculate_8cpp_ac0f2228420376f4db7e1274f2b41667c_cgraph.svg" width="280" height="151"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/db1/binomial__calculate_8cpp_ac0f2228420376f4db7e1274f2b41667c_cgraph.svg" width="280" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

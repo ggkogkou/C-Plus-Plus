@@ -1,7 +1,5 @@
 <map id="range_queries::perSegTree::update" name="range_queries::perSegTree::update">
-<area shape="rect" id="node1" title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ..." alt="" coords="5,57,184,98"/>
-<area shape="rect" id="node2" href="$d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529" title="Another test function." alt="" coords="302,5,341,32"/>
-<area shape="rect" id="node4" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="232,57,411,98"/>
-<area shape="rect" id="node5" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" title="Creating a new node with the same values of curr node." alt="" coords="459,86,637,127"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="515,5,581,32"/>
+<area shape="rect" id="node1" title="Doing range update, checking at every node if it has some value to be propagated. All nodes affected ..." alt="" coords="5,35,184,76"/>
+<area shape="rect" id="node2" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#ace7f57935b3bb9446f11c239fd89ae79" title="If there is some value to be propagated to the passed node, value is added to the node and the childr..." alt="" coords="232,5,411,47"/>
+<area shape="rect" id="node3" href="$d8/d28/classrange__queries_1_1per_seg_tree.html#a0cec4b77d264521717cf9b0482c45817" title="Creating a new node with the same values of curr node." alt="" coords="459,35,637,76"/>
 </map>

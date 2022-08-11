@@ -697,21 +697,14 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  146</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> r = 0;</div>
 <div class="line"><span class="lineno">  147</span>        _BitScanForward64(&amp;r, f);</div>
 <div class="line"><span class="lineno">  148</span>        <span class="keywordflow">if</span> (r == 64) {</div>
-<div class="line"><span class="lineno">  149</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> = 0;</div>
-<div class="line"><span class="lineno">  150</span>            _BitScanForward64(&amp;<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>, s);</div>
-<div class="line"><span class="lineno">  151</span>            <span class="keywordflow">return</span> 64 + <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>;</div>
+<div class="line"><span class="lineno">  149</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> l = 0;</div>
+<div class="line"><span class="lineno">  150</span>            _BitScanForward64(&amp;l, s);</div>
+<div class="line"><span class="lineno">  151</span>            <span class="keywordflow">return</span> 64 + l;</div>
 <div class="line"><span class="lineno">  152</span>        }</div>
 <div class="line"><span class="lineno">  153</span>        <span class="keywordflow">return</span> r;</div>
 <div class="line"><span class="lineno">  154</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">  155</span>    }</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a995716bc040dc6cf32b5cb3df51c4529"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:175</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classuint128__t_af139bb6e630f1a61919f180978611cd2_cgraph.svg" width="318" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7d2285a8a6e20b77f82f1f0351afe76e" name="a7d2285a8a6e20b77f82f1f0351afe76e"></a>
@@ -749,20 +742,14 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  169</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> r = 0;</div>
 <div class="line"><span class="lineno">  170</span>        _BitScanReverse64(&amp;r, s);</div>
 <div class="line"><span class="lineno">  171</span>        <span class="keywordflow">if</span> (r == 64) {</div>
-<div class="line"><span class="lineno">  172</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> = 0;</div>
-<div class="line"><span class="lineno">  173</span>            _BitScanReverse64(&amp;<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>, f);</div>
-<div class="line"><span class="lineno">  174</span>            <span class="keywordflow">return</span> 64 + <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>;</div>
+<div class="line"><span class="lineno">  172</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> l = 0;</div>
+<div class="line"><span class="lineno">  173</span>            _BitScanReverse64(&amp;l, f);</div>
+<div class="line"><span class="lineno">  174</span>            <span class="keywordflow">return</span> 64 + l;</div>
 <div class="line"><span class="lineno">  175</span>        }</div>
 <div class="line"><span class="lineno">  176</span>        <span class="keywordflow">return</span> r;</div>
 <div class="line"><span class="lineno">  177</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">  178</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classuint128__t_a7d2285a8a6e20b77f82f1f0351afe76e_cgraph.svg" width="316" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8bf81f7f5f5c98f197822ec88e106c6c" name="a8bf81f7f5f5c98f197822ec88e106c6c"></a>
@@ -831,7 +818,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classuint128__t_a8bf81f7f5f5c98f197822ec88e106c6c_cgraph.svg" width="483" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classuint128__t_a8bf81f7f5f5c98f197822ec88e106c6c_cgraph.svg" width="283" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1130,7 +1117,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classuint128__t_abfc6a8765039cacc829a5cd386b5a066_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classuint128__t_abfc6a8765039cacc829a5cd386b5a066_cgraph.svg" width="474" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1222,7 +1209,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classuint128__t_a279209a184db20a7ffc8e687fdb05be2_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classuint128__t_a279209a184db20a7ffc8e687fdb05be2_cgraph.svg" width="482" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2296,7 +2283,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classuint128__t_a3072a7e43da3600c345c81bc80c957ee_cgraph.svg" width="666" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classuint128__t_a3072a7e43da3600c345c81bc80c957ee_cgraph.svg" width="466" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2388,7 +2375,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classuint128__t_a300ed88fe2054788cc6e0b6a8fdf66db_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classuint128__t_a300ed88fe2054788cc6e0b6a8fdf66db_cgraph.svg" width="474" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

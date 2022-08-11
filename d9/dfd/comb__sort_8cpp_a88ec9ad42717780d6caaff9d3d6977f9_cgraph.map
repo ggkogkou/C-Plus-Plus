@@ -1,10 +1,8 @@
 <map id="tests" name="tests">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,56,108"/>
-<area shape="rect" id="node2" href="$d9/dfd/comb__sort_8cpp.html#a0f4e7569090083fb53d5cdeaf0e2974f" title=" " alt="" coords="114,56,195,83"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " alt="" coords="104,107,205,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,56,83"/>
+<area shape="rect" id="node2" href="$d9/dfd/comb__sort_8cpp.html#a0f4e7569090083fb53d5cdeaf0e2974f" title=" " alt="" coords="114,31,195,57"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/is_sorted.html#" title=" " alt="" coords="104,81,205,108"/>
 <area shape="rect" id="node3" href="$d9/dfd/comb__sort_8cpp.html#aede08143e63105faba10e9ee8e745fd5" title=" " alt="" coords="253,5,352,32"/>
-<area shape="rect" id="node5" href="$d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529" title="Another test function." alt="" coords="283,56,322,83"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="263,107,342,133"/>
+<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="263,56,342,83"/>
 <area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/max.html#" title=" " alt="" coords="400,5,473,32"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="404,56,469,83"/>
 </map>

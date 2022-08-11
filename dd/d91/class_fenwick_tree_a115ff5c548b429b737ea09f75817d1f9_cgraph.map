@@ -1,7 +1,5 @@
 <map id="FenwickTree::sum_range" name="FenwickTree::sum_range">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,175,57"/>
-<area shape="rect" id="node2" href="$d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529" title="Another test function." alt="" coords="269,5,307,32"/>
-<area shape="rect" id="node4" href="$dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699" title=" " alt="" coords="223,56,353,83"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="438,5,503,32"/>
-<area shape="rect" id="node5" href="$dd/d91/class_fenwick_tree.html#aaae15ea71455315e257baa11017cec10" title=" " alt="" coords="401,56,540,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,175,32"/>
+<area shape="rect" id="node2" href="$dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699" title=" " alt="" coords="223,5,353,32"/>
+<area shape="rect" id="node3" href="$dd/d91/class_fenwick_tree.html#aaae15ea71455315e257baa11017cec10" title=" " alt="" coords="401,5,540,32"/>
 </map>

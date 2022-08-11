@@ -252,7 +252,7 @@ Functions</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/d3b/namespaceqr__algorithm_a28e2fa3e803abaea6c568dc45d69d8cc_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/d3b/namespaceqr__algorithm_a28e2fa3e803abaea6c568dc45d69d8cc_cgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -449,8 +449,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  169</span>            col_vector[j] = A[j][i];</div>
 <div class="line"><span class="lineno">  170</span>        }</div>
 <div class="line"><span class="lineno">  171</span>        <span class="keywordflow">for</span> (j = 0; j &lt; i; j++) {</div>
-<div class="line"><span class="lineno">  172</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> = 0; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> &lt; ROWS; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>++) {</div>
-<div class="line"><span class="lineno">  173</span>                col_vector2[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>] = Q[0][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>][j];</div>
+<div class="line"><span class="lineno">  172</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; ROWS; k++) {</div>
+<div class="line"><span class="lineno">  173</span>                col_vector2[k] = Q[0][k][j];</div>
 <div class="line"><span class="lineno">  174</span>            }</div>
 <div class="line"><span class="lineno">  175</span>            col_vector2 = <a class="code hl_function" href="../../d2/d3b/namespaceqr__algorithm.html#a6d3c7dce1f142141f509d09f6c0e25dc">vector_proj</a>(col_vector, col_vector2);</div>
 <div class="line"><span class="lineno">  176</span>            tmp_vector -= col_vector2;</div>
@@ -477,15 +477,14 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  197</span><span class="comment">// parallelize on threads</span></div>
 <div class="line"><span class="lineno">  198</span><span class="preprocessor">#pragma omp for</span></div>
 <div class="line"><span class="lineno">  199</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  200</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> = i; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> &lt; COLUMNS; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>++) {</div>
+<div class="line"><span class="lineno">  200</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = i; k &lt; COLUMNS; k++) {</div>
 <div class="line"><span class="lineno">  201</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> kk = 0; kk &lt; ROWS; kk++) {</div>
-<div class="line"><span class="lineno">  202</span>                col_vector2[kk] = A[kk][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>];</div>
+<div class="line"><span class="lineno">  202</span>                col_vector2[kk] = A[kk][k];</div>
 <div class="line"><span class="lineno">  203</span>            }</div>
-<div class="line"><span class="lineno">  204</span>            R[0][i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>] = (col_vector * col_vector2).<a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a>();</div>
+<div class="line"><span class="lineno">  204</span>            R[0][i][k] = (col_vector * col_vector2).<a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">sum</a>();</div>
 <div class="line"><span class="lineno">  205</span>        }</div>
 <div class="line"><span class="lineno">  206</span>    }</div>
 <div class="line"><span class="lineno">  207</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d50f1b8eb533b54721812d16a3699cc"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:170</div></div>
 <div class="ttc" id="anamespacemachine__learning_html_a6f1c98c016ad34ff3d9f39372161bd35"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35">machine_learning::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; std::valarray&lt; T &gt; &gt; &amp;A)</div><div class="ttdef"><b>Definition:</b> vector_ops.hpp:232</div></div>
 <div class="ttc" id="anamespaceqr__algorithm_html_a6d3c7dce1f142141f509d09f6c0e25dc"><div class="ttname"><a href="../../d2/d3b/namespaceqr__algorithm.html#a6d3c7dce1f142141f509d09f6c0e25dc">qr_algorithm::vector_proj</a></div><div class="ttdeci">std::valarray&lt; T &gt; vector_proj(const std::valarray&lt; T &gt; &amp;a, const std::valarray&lt; T &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> qr_decompose.h:104</div></div>
 <div class="ttc" id="anamespaceqr__algorithm_html_ad16da2183db22378435042f26af43d5f"><div class="ttname"><a href="../../d2/d3b/namespaceqr__algorithm.html#ad16da2183db22378435042f26af43d5f">qr_algorithm::vector_mag</a></div><div class="ttdeci">double vector_mag(const std::valarray&lt; T &gt; &amp;a)</div><div class="ttdef"><b>Definition:</b> qr_decompose.h:92</div></div>
@@ -494,7 +493,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d3b/namespaceqr__algorithm_a73ce637634fc49e1d10d190eb388ebf1_cgraph.svg" width="626" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d3b/namespaceqr__algorithm_a73ce637634fc49e1d10d190eb388ebf1_cgraph.svg" width="626" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

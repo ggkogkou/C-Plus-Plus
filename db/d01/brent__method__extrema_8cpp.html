@@ -123,7 +123,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1aa76a6d5fd4d333f9072beff1dc486b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d01/brent__method__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b">get_minima</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; double(double)&gt; &amp;<a class="el" href="../../d4/d18/composite__simpson__rule_8cpp.html#a3de2b7b41a8e4b07da05298510d17ed2">f</a>, double lim_a, double lim_b)</td></tr>
+<tr class="memitem:a1aa76a6d5fd4d333f9072beff1dc486b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d01/brent__method__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b">get_minima</a> (const <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt; double(double)&gt; &amp;f, double lim_a, double lim_b)</td></tr>
 <tr class="memdesc:a1aa76a6d5fd4d333f9072beff1dc486b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the real root of a function in the given interval.  <a href="../../db/d01/brent__method__extrema_8cpp.html#a1aa76a6d5fd4d333f9072beff1dc486b">More...</a><br /></td></tr>
 <tr class="separator:a1aa76a6d5fd4d333f9072beff1dc486b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1440a7779ac56f47a3f355ce4a8c7da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d01/brent__method__extrema_8cpp.html#a1440a7779ac56f47a3f355ce4a8c7da0">test1</a> ()</td></tr>
@@ -227,7 +227,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   48</span> </div>
 <div class="line"><span class="lineno">   49</span>    <span class="keywordtype">double</span> v = lim_a + M_GOLDEN_RATIO * (lim_b - lim_a);</div>
 <div class="line"><span class="lineno">   50</span>    <span class="keywordtype">double</span> u, w = v, x = v;</div>
-<div class="line"><span class="lineno">   51</span>    <span class="keywordtype">double</span> fu, fv = <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a3de2b7b41a8e4b07da05298510d17ed2">f</a>(v);</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordtype">double</span> fu, fv = f(v);</div>
 <div class="line"><span class="lineno">   52</span>    <span class="keywordtype">double</span> fw = fv, fx = fv;</div>
 <div class="line"><span class="lineno">   53</span> </div>
 <div class="line"><span class="lineno">   54</span>    <span class="keywordtype">double</span> mid_point = (lim_a + lim_b) / 2.f;</div>
@@ -275,7 +275,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   96</span>        <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">   97</span>            u = -tolerance;</div>
 <div class="line"><span class="lineno">   98</span>        u += x;</div>
-<div class="line"><span class="lineno">   99</span>        fu = <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a3de2b7b41a8e4b07da05298510d17ed2">f</a>(u);</div>
+<div class="line"><span class="lineno">   99</span>        fu = f(u);</div>
 <div class="line"><span class="lineno">  100</span> </div>
 <div class="line"><span class="lineno">  101</span>        <span class="comment">// update variables</span></div>
 <div class="line"><span class="lineno">  102</span>        <span class="keywordflow">if</span> (fu &lt;= fx) {</div>
@@ -314,12 +314,11 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  135</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
 <div class="ttc" id="abrent__method__extrema_8cpp_html_a002b2f4894492820fe708b1b7e7c5e70"><div class="ttname"><a href="../../db/d01/brent__method__extrema_8cpp.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a></div><div class="ttdeci">#define EPSILON</div><div class="ttdoc">system accuracy limit</div><div class="ttdef"><b>Definition:</b> brent_method_extrema.cpp:23</div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a3de2b7b41a8e4b07da05298510d17ed2"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a3de2b7b41a8e4b07da05298510d17ed2">f</a></div><div class="ttdeci">double f(double x)</div><div class="ttdoc">A function f(x) that will be used to test the method.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:160</div></div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d01/brent__method__extrema_8cpp_a1aa76a6d5fd4d333f9072beff1dc486b_cgraph.svg" width="346" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d01/brent__method__extrema_8cpp_a1aa76a6d5fd4d333f9072beff1dc486b_cgraph.svg" width="227" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -359,7 +358,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d01/brent__method__extrema_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="543" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d01/brent__method__extrema_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="424" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -402,7 +401,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d01/brent__method__extrema_8cpp_a1440a7779ac56f47a3f355ce4a8c7da0_cgraph.svg" width="444" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d01/brent__method__extrema_8cpp_a1440a7779ac56f47a3f355ce4a8c7da0_cgraph.svg" width="326" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -445,7 +444,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d01/brent__method__extrema_8cpp_a0283886819c7c140a023582b7269e2d0_cgraph.svg" width="444" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d01/brent__method__extrema_8cpp_a0283886819c7c140a023582b7269e2d0_cgraph.svg" width="326" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -486,7 +485,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d01/brent__method__extrema_8cpp_a6d0455dd5c30adda100e95f0423c786e_cgraph.svg" width="444" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d01/brent__method__extrema_8cpp_a6d0455dd5c30adda100e95f0423c786e_cgraph.svg" width="326" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

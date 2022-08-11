@@ -6,8 +6,5 @@
 <area shape="rect" id="node5" href="$d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a2dfbda148aad0bfaba2ebfda9ebc915a" title="Utility function to assign highest parent that can be reached though heavy chains." alt="" coords="200,317,347,373"/>
 <area shape="rect" id="node6" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ad22d760a5a33545a70e7ea5e1786c8dc" title="This function must be called after the tree adjacency list and node values are populated The function..." alt="" coords="200,397,347,453"/>
 <area shape="rect" id="node7" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ae8de7aefcb6635d3dacdd174cd4890c4" title="Utility function to populate the t_par vector." alt="" coords="395,345,541,401"/>
-<area shape="rect" id="node11" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#aa339c31ec74cd86a4842a8b09653d460" title="Utility function to compute sub&#45;tree sizes." alt="" coords="395,449,541,505"/>
-<area shape="rect" id="node8" href="$d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc" title="Another test function." alt="" coords="589,360,628,387"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="676,335,748,361"/>
-<area shape="rect" id="node10" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="677,385,747,412"/>
+<area shape="rect" id="node8" href="$d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#aa339c31ec74cd86a4842a8b09653d460" title="Utility function to compute sub&#45;tree sizes." alt="" coords="395,449,541,505"/>
 </map>

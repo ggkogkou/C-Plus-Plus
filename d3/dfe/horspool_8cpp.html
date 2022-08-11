@@ -240,20 +240,20 @@ false if text string does not contain prototype string </dd></dl>
 <div class="line"><span class="lineno">   64</span>        prototype.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>() -</div>
 <div class="line"><span class="lineno">   65</span>        1);  <span class="comment">// Index that we shift in text to find the substring</span></div>
 <div class="line"><span class="lineno">   66</span>    <span class="keywordflow">while</span> (i &lt; text.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>()) {</div>
-<div class="line"><span class="lineno">   67</span>        <span class="keywordtype">int</span> j = i, <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> = 0;</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordtype">int</span> j = i, k = 0;</div>
 <div class="line"><span class="lineno">   68</span>        <span class="keywordtype">bool</span> flag = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   69</span> </div>
 <div class="line"><span class="lineno">   70</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> z = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(prototype.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>() - 1); z &gt;= 0 &amp;&amp; flag;</div>
 <div class="line"><span class="lineno">   71</span>             z--) {  <span class="comment">// Checking if all characters of substring are equal with all characters of string</span></div>
 <div class="line"><span class="lineno">   72</span>            <span class="keywordflow">if</span> (text[j] == prototype[z]) {</div>
-<div class="line"><span class="lineno">   73</span>                <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>++;</div>
+<div class="line"><span class="lineno">   73</span>                k++;</div>
 <div class="line"><span class="lineno">   74</span>                j--;</div>
 <div class="line"><span class="lineno">   75</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   76</span>                flag = <span class="keyword">false</span>;  <span class="comment">// If two characters are not equal set flag to false and break from loop</span></div>
 <div class="line"><span class="lineno">   77</span>            }</div>
 <div class="line"><span class="lineno">   78</span>        }</div>
 <div class="line"><span class="lineno">   79</span> </div>
-<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> ==</div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">if</span> (k ==</div>
 <div class="line"><span class="lineno">   81</span>            prototype.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">size</a>()) {  <span class="comment">// If all characters match then return true</span></div>
 <div class="line"><span class="lineno">   82</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   83</span>        } <span class="keywordflow">else</span> {</div>
@@ -266,12 +266,11 @@ false if text string does not contain prototype string </dd></dl>
 <div class="line"><span class="lineno">   90</span>    }</div>
 <div class="line"><span class="lineno">   91</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   92</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d50f1b8eb533b54721812d16a3699cc"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:170</div></div>
 <div class="ttc" id="ahorspool_8cpp_html_a1a9c3aa55ccc79d0f47d50c580997336"><div class="ttname"><a href="../../d3/dfe/horspool_8cpp.html#a1a9c3aa55ccc79d0f47d50c580997336">strings::horspool::findShiftTable</a></div><div class="ttdeci">std::unordered_map&lt; char, int &gt; findShiftTable(const std::string &amp;prototype)</div><div class="ttdef"><b>Definition:</b> horspool.cpp:26</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dfe/horspool_8cpp_a9884bca75ce39c116697ea2574adb37d_cgraph.svg" width="527" height="439"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dfe/horspool_8cpp_a9884bca75ce39c116697ea2574adb37d_cgraph.svg" width="527" height="338"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

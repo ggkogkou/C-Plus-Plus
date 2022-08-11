@@ -159,27 +159,20 @@ Functions</h2></td></tr>
 <dd>
 -1 if T is not found </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   15</span>                                           {</div>
-<div class="line"><span class="lineno">   16</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> = 0;</div>
+<div class="line"><span class="lineno">   16</span>    <span class="keywordtype">int</span> l = 0;</div>
 <div class="line"><span class="lineno">   17</span> </div>
-<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">while</span> (<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> &lt;= r) {</div>
-<div class="line"><span class="lineno">   19</span>        <span class="keywordtype">int</span> m = <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> + (r - <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>) / 2;</div>
+<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">while</span> (l &lt;= r) {</div>
+<div class="line"><span class="lineno">   19</span>        <span class="keywordtype">int</span> m = l + (r - l) / 2;</div>
 <div class="line"><span class="lineno">   20</span>        <span class="keywordflow">if</span> (key == a[m])</div>
 <div class="line"><span class="lineno">   21</span>            <span class="keywordflow">return</span> m;</div>
 <div class="line"><span class="lineno">   22</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (key &lt; a[m])</div>
 <div class="line"><span class="lineno">   23</span>            r = m - 1;</div>
 <div class="line"><span class="lineno">   24</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   25</span>            <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> = m + 1;</div>
+<div class="line"><span class="lineno">   25</span>            l = m + 1;</div>
 <div class="line"><span class="lineno">   26</span>    }</div>
 <div class="line"><span class="lineno">   27</span>    <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">   28</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a995716bc040dc6cf32b5cb3df51c4529"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:175</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dd5/binary__search_8cpp_a78df202b718cfe3c2c9216979b08298d_cgraph.svg" width="314" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abf9e6b7e6f15df4b525a2e7705ba3089" name="abf9e6b7e6f15df4b525a2e7705ba3089"></a>
@@ -241,7 +234,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dd5/binary__search_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089_cgraph.svg" width="412" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dd5/binary__search_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089_cgraph.svg" width="212" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

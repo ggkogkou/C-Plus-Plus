@@ -121,7 +121,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a8fe6bac9e03f58abcc2ce26ef3de1b5f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#a8fe6bac9e03f58abcc2ce26ef3de1b5f">insertionSort</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; T &gt; *arr)</td></tr>
 <tr class="separator:a8fe6bac9e03f58abcc2ce26ef3de1b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa26de383227859210f14dcf12201a079"><td class="memTemplParams" colspan="2">template&lt;class Iterator &gt; </td></tr>
-<tr class="memitem:aa26de383227859210f14dcf12201a079"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079">merge</a> (Iterator <a class="el" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>, Iterator r, const Iterator e, char b[])</td></tr>
+<tr class="memitem:aa26de383227859210f14dcf12201a079"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079">merge</a> (Iterator l, Iterator r, const Iterator e, char b[])</td></tr>
 <tr class="memdesc:aa26de383227859210f14dcf12201a079"><td class="mdescLeft">&#160;</td><td class="mdescRight">merges 2 sorted adjacent segments into a larger sorted segment  <a href="../../d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079">More...</a><br /></td></tr>
 <tr class="separator:aa26de383227859210f14dcf12201a079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a140d913e42fb94176a0b2c8b29a80420"><td class="memTemplParams" colspan="2">template&lt;class Iterator &gt; </td></tr>
@@ -456,24 +456,23 @@ template&lt;class Iterator &gt; </div>
 </dl>
 <div class="fragment"><div class="line"><span class="lineno">   57</span>                                                               {</div>
 <div class="line"><span class="lineno">   58</span>    <span class="comment">// create 2 pointers to point at the buffer</span></div>
-<div class="line"><span class="lineno">   59</span>    <span class="keyword">auto</span> p(<span class="keyword">reinterpret_cast&lt;</span>std::remove_reference_t&lt;decltype(*<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>)<span class="keyword">&gt;</span>*&gt;(b)), c(p);</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keyword">auto</span> p(<span class="keyword">reinterpret_cast&lt;</span>std::remove_reference_t&lt;decltype(*l)<span class="keyword">&gt;</span>*&gt;(b)), c(p);</div>
 <div class="line"><span class="lineno">   60</span>    <span class="comment">// move the left part of the segment</span></div>
-<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">for</span> (Iterator t(<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>); r != t; ++t) *p++ = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(*t);</div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">for</span> (Iterator t(l); r != t; ++t) *p++ = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(*t);</div>
 <div class="line"><span class="lineno">   62</span>    <span class="comment">// while neither the buffer nor the right part has been exhausted</span></div>
 <div class="line"><span class="lineno">   63</span>    <span class="comment">// move the smallest element of the two back to the container</span></div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">while</span> (e != r &amp;&amp; c != p) *<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>++ = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(*r &lt; *c ? *r++ : *c++);</div>
+<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">while</span> (e != r &amp;&amp; c != p) *l++ = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(*r &lt; *c ? *r++ : *c++);</div>
 <div class="line"><span class="lineno">   65</span>    <span class="comment">// notice only one of the two following loops will be executed</span></div>
 <div class="line"><span class="lineno">   66</span>    <span class="comment">// while the right part hasn&#39;t bee exhausted, move it back</span></div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">while</span> (e != r) *<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>++ = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(*r++);</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">while</span> (e != r) *l++ = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(*r++);</div>
 <div class="line"><span class="lineno">   68</span>    <span class="comment">// while the buffer hasn&#39;t bee exhausted, move it back</span></div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">while</span> (c != p) *<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>++ = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(*c++);</div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">while</span> (c != p) *l++ = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a>(*c++);</div>
 <div class="line"><span class="lineno">   70</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a995716bc040dc6cf32b5cb3df51c4529"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:175</div></div>
 <div class="ttc" id="amove_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/move.html">std::move</a></div><div class="ttdeci">T move(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_aa26de383227859210f14dcf12201a079_cgraph.svg" width="358" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_aa26de383227859210f14dcf12201a079_cgraph.svg" width="244" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -522,7 +521,7 @@ template&lt;class Iterator &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_ae97f4dd815654c4682f564afd718e824_cgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_ae97f4dd815654c4682f564afd718e824_cgraph.svg" width="642" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -597,7 +596,7 @@ template&lt;class Iterator &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a140d913e42fb94176a0b2c8b29a80420_cgraph.svg" width="556" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a140d913e42fb94176a0b2c8b29a80420_cgraph.svg" width="443" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -645,7 +644,7 @@ template&lt;class Iterator &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a27236b8d3df3832e1f1225576a122534_cgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a27236b8d3df3832e1f1225576a122534_cgraph.svg" width="642" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1108,7 +1107,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_af2c5b92cbfe73f63f6074c61b0a45331_cgraph.svg" width="516" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_af2c5b92cbfe73f63f6074c61b0a45331_cgraph.svg" width="310" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1145,10 +1144,10 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><span class="lineno">   45</span>                                    {</div>
 <div class="line"><span class="lineno">   46</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> gaps[] = {701, 301, 132, 57, 23, 10, 4, 1};</div>
 <div class="line"><span class="lineno">   47</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> gap_len = 8;</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordtype">size_t</span> i, j, <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#ac84831571c8f3d0bca83c1747a32e8d6">g</a>;</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordtype">size_t</span> i, j, g;</div>
 <div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">for</span> (<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#ac84831571c8f3d0bca83c1747a32e8d6">g</a> = 0; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#ac84831571c8f3d0bca83c1747a32e8d6">g</a> &lt; gap_len; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#ac84831571c8f3d0bca83c1747a32e8d6">g</a>++) {</div>
-<div class="line"><span class="lineno">   51</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> gap = gaps[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#ac84831571c8f3d0bca83c1747a32e8d6">g</a>];</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">for</span> (g = 0; g &lt; gap_len; g++) {</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> gap = gaps[g];</div>
 <div class="line"><span class="lineno">   52</span>        <span class="keywordflow">for</span> (i = gap; i &lt; LEN; i++) {</div>
 <div class="line"><span class="lineno">   53</span>            T tmp = arr[i];</div>
 <div class="line"><span class="lineno">   54</span> </div>
@@ -1160,14 +1159,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   60</span>        }</div>
 <div class="line"><span class="lineno">   61</span>    }</div>
 <div class="line"><span class="lineno">   62</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_ac84831571c8f3d0bca83c1747a32e8d6"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#ac84831571c8f3d0bca83c1747a32e8d6">g</a></div><div class="ttdeci">double g(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:165</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a5669396c6a6b1e14b97589b6e37980aa_cgraph.svg" width="343" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4d76603c54d3dc56146e92d10a043924" name="a4d76603c54d3dc56146e92d10a043924"></a>
@@ -1194,7 +1186,7 @@ template&lt;typename T , size_t N&gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a4d76603c54d3dc56146e92d10a043924_cgraph.svg" width="516" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d91/namespacesorting_a4d76603c54d3dc56146e92d10a043924_cgraph.svg" width="310" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

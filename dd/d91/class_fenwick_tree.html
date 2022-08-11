@@ -115,7 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2e9ea4fcbe0786487f4535c1cfc7aa00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade1d6a3d49af9d9df33e2fb26cab1699"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699">sum</a> (int id)</td></tr>
 <tr class="separator:ade1d6a3d49af9d9df33e2fb26cab1699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a115ff5c548b429b737ea09f75817d1f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d91/class_fenwick_tree.html#a115ff5c548b429b737ea09f75817d1f9">sum_range</a> (int <a class="el" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>, int r)</td></tr>
+<tr class="memitem:a115ff5c548b429b737ea09f75817d1f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d91/class_fenwick_tree.html#a115ff5c548b429b737ea09f75817d1f9">sum_range</a> (int l, int r)</td></tr>
 <tr class="separator:a115ff5c548b429b737ea09f75817d1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -331,13 +331,12 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p >Returns the prefix sum in range from l to r </p>
-<div class="fragment"><div class="line"><span class="lineno">   65</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="../../dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699">sum</a>(r) - <a class="code hl_function" href="../../dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699">sum</a>(<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> - 1); }</div>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="../../dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699">sum</a>(r) - <a class="code hl_function" href="../../dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699">sum</a>(l - 1); }</div>
 <div class="ttc" id="aclass_fenwick_tree_html_ade1d6a3d49af9d9df33e2fb26cab1699"><div class="ttname"><a href="../../dd/d91/class_fenwick_tree.html#ade1d6a3d49af9d9df33e2fb26cab1699">FenwickTree::sum</a></div><div class="ttdeci">int sum(int id)</div><div class="ttdef"><b>Definition:</b> fenwick_tree.cpp:54</div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a995716bc040dc6cf32b5cb3df51c4529"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:175</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d91/class_fenwick_tree_a115ff5c548b429b737ea09f75817d1f9_cgraph.svg" width="546" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d91/class_fenwick_tree_a115ff5c548b429b737ea09f75817d1f9_cgraph.svg" width="546" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

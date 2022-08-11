@@ -2,7 +2,6 @@ var dir_9c6faab82c22511b50177aa2e38e2780 =
 [
     [ "bisection_method.cpp", "d7/d6a/bisection__method_8cpp.html", "d7/d6a/bisection__method_8cpp" ],
     [ "brent_method_extrema.cpp", "db/d01/brent__method__extrema_8cpp.html", "db/d01/brent__method__extrema_8cpp" ],
-    [ "composite_simpson_rule.cpp", "d4/d18/composite__simpson__rule_8cpp.html", "d4/d18/composite__simpson__rule_8cpp" ],
     [ "durand_kerner_roots.cpp", "da/df2/durand__kerner__roots_8cpp.html", "da/df2/durand__kerner__roots_8cpp" ],
     [ "false_position.cpp", "dd/d29/false__position_8cpp.html", "dd/d29/false__position_8cpp" ],
     [ "gaussian_elimination.cpp", "d0/de2/gaussian__elimination_8cpp.html", "d0/de2/gaussian__elimination_8cpp" ],

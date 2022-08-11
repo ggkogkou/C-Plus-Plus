@@ -1,7 +1,5 @@
 <map id="sorting::non_recursive_merge_sort" name="sorting::non_recursive_merge_sort">
-<area shape="rect" id="node1" title="bottom&#45;up merge sort which sorts elements in a non&#45;decreasing order" alt="" coords="5,23,156,65"/>
-<area shape="rect" id="node2" href="$d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="204,31,309,57"/>
-<area shape="rect" id="node3" href="$d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529" title="Another test function." alt="" coords="378,5,417,32"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="357,56,437,83"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="485,5,551,32"/>
+<area shape="rect" id="node1" title="bottom&#45;up merge sort which sorts elements in a non&#45;decreasing order" alt="" coords="5,5,156,47"/>
+<area shape="rect" id="node2" href="$d5/d91/namespacesorting.html#aa26de383227859210f14dcf12201a079" title="merges 2 sorted adjacent segments into a larger sorted segment" alt="" coords="204,13,309,39"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/move.html#" title=" " alt="" coords="357,13,437,39"/>
 </map>

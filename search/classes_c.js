@@ -37,6 +37,5 @@ var searchData=
   ['multimap_34',['multimap',['http://en.cppreference.com/w/cpp/container/multimap.html',0,'std']]],
   ['multiplies_35',['multiplies',['http://en.cppreference.com/w/cpp/utility/functional/multiplies.html',0,'std']]],
   ['multiset_36',['multiset',['http://en.cppreference.com/w/cpp/container/multiset.html',0,'std']]],
-  ['multiset_3c_20int_20_3e_37',['multiset&lt; int &gt;',['http://en.cppreference.com/w/cpp/container/multiset.html',0,'std']]],
-  ['mutex_38',['mutex',['http://en.cppreference.com/w/cpp/thread/mutex.html',0,'std']]]
+  ['mutex_37',['mutex',['http://en.cppreference.com/w/cpp/thread/mutex.html',0,'std']]]
 ];

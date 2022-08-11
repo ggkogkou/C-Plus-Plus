@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('da/dd3/namespacespirograph.html','../.
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aeca22dbe4563358960e907a40cd3e1ac"><td class="memTemplParams" colspan="2">template&lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> N&gt; </td></tr>
-<tr class="memitem:aeca22dbe4563358960e907a40cd3e1ac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/dd3/namespacespirograph.html#aeca22dbe4563358960e907a40cd3e1ac">spirograph</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; double, double &gt;, N &gt; *points, double <a class="el" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>, double <a class="el" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>, double rot)</td></tr>
+<tr class="memitem:aeca22dbe4563358960e907a40cd3e1ac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/dd3/namespacespirograph.html#aeca22dbe4563358960e907a40cd3e1ac">spirograph</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a>&lt; <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; double, double &gt;, N &gt; *points, double l, double k, double rot)</td></tr>
 <tr class="separator:aeca22dbe4563358960e907a40cd3e1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e83a64e8443fff1e5ffdc1c299c1e99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd3/namespacespirograph.html#a8e83a64e8443fff1e5ffdc1c299c1e99">test</a> ()</td></tr>
 <tr class="memdesc:a8e83a64e8443fff1e5ffdc1c299c1e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test function to save resulting points to a CSV file.  <a href="../../da/dd3/namespacespirograph.html#a8e83a64e8443fff1e5ffdc1c299c1e99">More...</a><br /></td></tr>
@@ -182,7 +182,7 @@ y &amp;=&amp; R\left[ (1-k) \sin (t) - l\cdot k\cdot\sin \left(\frac{1-k}{k}t\ri
 <div class="fragment"><div class="line"><span class="lineno">   71</span>                                      {</div>
 <div class="line"><span class="lineno">   72</span>    <span class="keywordtype">double</span> dt = rot * 2.f * M_PI / N;</div>
 <div class="line"><span class="lineno">   73</span>    <span class="keywordtype">double</span> R = 1.f;</div>
-<div class="line"><span class="lineno">   74</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> k1 = 1.f - <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>;</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> k1 = 1.f - k;</div>
 <div class="line"><span class="lineno">   75</span>    int32_t step = 0;</div>
 <div class="line"><span class="lineno">   76</span> </div>
 <div class="line"><span class="lineno">   77</span><span class="preprocessor">#ifdef _OPENMP</span></div>
@@ -190,20 +190,18 @@ y &amp;=&amp; R\left[ (1-k) \sin (t) - l\cdot k\cdot\sin \left(\frac{1-k}{k}t\ri
 <div class="line"><span class="lineno">   79</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">   80</span>    <span class="keywordflow">for</span> (step = 0; step &lt; N; step++) {</div>
 <div class="line"><span class="lineno">   81</span>        <span class="keywordtype">double</span> t = dt * step;</div>
-<div class="line"><span class="lineno">   82</span>        <span class="keywordtype">double</span> first = R * (k1 * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a>(t) + <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> * <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a>(k1 * t / <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>));</div>
-<div class="line"><span class="lineno">   83</span>        <span class="keywordtype">double</span> second = R * (k1 * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a>(t) - <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> * <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a>(k1 * t / <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>));</div>
+<div class="line"><span class="lineno">   82</span>        <span class="keywordtype">double</span> first = R * (k1 * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a>(t) + l * k * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a>(k1 * t / k));</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordtype">double</span> second = R * (k1 * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a>(t) - l * k * <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a>(k1 * t / k));</div>
 <div class="line"><span class="lineno">   84</span>        points[0][step].first = first;</div>
 <div class="line"><span class="lineno">   85</span>        points[0][step].second = second;</div>
 <div class="line"><span class="lineno">   86</span>    }</div>
 <div class="line"><span class="lineno">   87</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d50f1b8eb533b54721812d16a3699cc"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:170</div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a995716bc040dc6cf32b5cb3df51c4529"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:175</div></div>
 <div class="ttc" id="acos_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/cos.html">std::cos</a></div><div class="ttdeci">T cos(T... args)</div></div>
 <div class="ttc" id="asin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sin.html">std::sin</a></div><div class="ttdeci">T sin(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dd3/namespacespirograph_aeca22dbe4563358960e907a40cd3e1ac_cgraph.svg" width="399" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dd3/namespacespirograph_aeca22dbe4563358960e907a40cd3e1ac_cgraph.svg" width="279" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -227,9 +225,9 @@ Here is the call graph for this function:</div>
 <p>Test function to save resulting points to a CSV file. </p>
 <div class="fragment"><div class="line"><span class="lineno">   93</span>            {</div>
 <div class="line"><span class="lineno">   94</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> N = 500;</div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> = 0.3, <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> = 0.75, rot = 10.;</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordtype">double</span> l = 0.3, k = 0.75, rot = 10.;</div>
 <div class="line"><span class="lineno">   96</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_stringstream.html">std::stringstream</a> fname;</div>
-<div class="line"><span class="lineno">   97</span>    fname &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(3) &lt;&lt; <span class="stringliteral">&quot;spirograph_&quot;</span> &lt;&lt; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; rot</div>
+<div class="line"><span class="lineno">   97</span>    fname &lt;&lt; <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/setw.html">std::setw</a>(3) &lt;&lt; <span class="stringliteral">&quot;spirograph_&quot;</span> &lt;&lt; l &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; k &lt;&lt; <span class="stringliteral">&quot;_&quot;</span> &lt;&lt; rot</div>
 <div class="line"><span class="lineno">   98</span>          &lt;&lt; <span class="stringliteral">&quot;.csv&quot;</span>;</div>
 <div class="line"><span class="lineno">   99</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> fp(fname.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_stringstream/str.html">str</a>());</div>
 <div class="line"><span class="lineno">  100</span>    <span class="keywordflow">if</span> (!fp.is_open()) {</div>
@@ -239,7 +237,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  104</span> </div>
 <div class="line"><span class="lineno">  105</span>    <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;std::pair&lt;double, double&gt;</a>, N&gt; points;</div>
 <div class="line"><span class="lineno">  106</span> </div>
-<div class="line"><span class="lineno">  107</span>    <a class="code hl_function" href="../../da/dd3/namespacespirograph.html#aeca22dbe4563358960e907a40cd3e1ac">spirograph</a>(&amp;points, <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>, <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>, rot);</div>
+<div class="line"><span class="lineno">  107</span>    <a class="code hl_function" href="../../da/dd3/namespacespirograph.html#aeca22dbe4563358960e907a40cd3e1ac">spirograph</a>(&amp;points, l, k, rot);</div>
 <div class="line"><span class="lineno">  108</span> </div>
 <div class="line"><span class="lineno">  109</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; N; i++) {</div>
 <div class="line"><span class="lineno">  110</span>        fp &lt;&lt; points[i].first &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; points[i].first;</div>
@@ -259,7 +257,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dd3/namespacespirograph_a8e83a64e8443fff1e5ffdc1c299c1e99_cgraph.svg" width="560" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dd3/namespacespirograph_a8e83a64e8443fff1e5ffdc1c299c1e99_cgraph.svg" width="440" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

@@ -1,8 +1,5 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title="Main function." alt="" coords="5,43,56,69"/>
+<area shape="rect" id="node1" title="Main function." alt="" coords="5,5,56,32"/>
 <area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="203,5,275,32"/>
-<area shape="rect" id="node3" href="$d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc" title="Another test function." alt="" coords="110,93,149,120"/>
-<area shape="rect" id="node6" href="$d8/db1/binomial__calculate_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Test implementations." alt="" coords="104,43,155,69"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="203,68,275,95"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="203,119,274,145"/>
+<area shape="rect" id="node3" href="$d8/db1/binomial__calculate_8cpp.html#a483bb8ccf42aaf7375a83e91490eda1e" title="Test implementations." alt="" coords="104,31,155,57"/>
 </map>

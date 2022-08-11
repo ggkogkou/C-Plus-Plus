@@ -172,31 +172,31 @@ The function returns the radius of the circle and prints the coordinated of the 
 <div class="line"><span class="lineno">   96</span>        <span class="comment">// for every subsequent point in the list</span></div>
 <div class="line"><span class="lineno">   97</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = i + 1; j &lt; P.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); j++)</div>
 <div class="line"><span class="lineno">   98</span>            <span class="comment">// for every subsequent point in the list</span></div>
-<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> = j + 1; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> &lt; P.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>++) {</div>
+<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> k = j + 1; k &lt; P.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(); k++) {</div>
 <div class="line"><span class="lineno">  100</span>                <span class="comment">// here, we now have picked three points from the given set of</span></div>
 <div class="line"><span class="lineno">  101</span>                <span class="comment">// points that we can use</span></div>
 <div class="line"><span class="lineno">  102</span>                <span class="comment">// viz., P[i], P[j] and P[k]</span></div>
 <div class="line"><span class="lineno">  103</span>                C.x = -0.5 * ((P[i].y * (P[j].x * P[j].x + P[j].y * P[j].y -</div>
-<div class="line"><span class="lineno">  104</span>                                         P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].x * P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].x - P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].y * P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].y) +</div>
-<div class="line"><span class="lineno">  105</span>                               P[j].y * (P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].x * P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].x + P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].y * P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].y -</div>
+<div class="line"><span class="lineno">  104</span>                                         P[k].x * P[k].x - P[k].y * P[k].y) +</div>
+<div class="line"><span class="lineno">  105</span>                               P[j].y * (P[k].x * P[k].x + P[k].y * P[k].y -</div>
 <div class="line"><span class="lineno">  106</span>                                         P[i].x * P[i].x - P[i].y * P[i].y) +</div>
-<div class="line"><span class="lineno">  107</span>                               P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].y * (P[i].x * P[i].x + P[i].y * P[i].y -</div>
+<div class="line"><span class="lineno">  107</span>                               P[k].y * (P[i].x * P[i].x + P[i].y * P[i].y -</div>
 <div class="line"><span class="lineno">  108</span>                                         P[j].x * P[j].x - P[j].y * P[j].y)) /</div>
-<div class="line"><span class="lineno">  109</span>                              (P[i].x * (P[j].y - P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].y) +</div>
-<div class="line"><span class="lineno">  110</span>                               P[j].x * (P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].y - P[i].y) +</div>
-<div class="line"><span class="lineno">  111</span>                               P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].x * (P[i].y - P[j].y)));</div>
+<div class="line"><span class="lineno">  109</span>                              (P[i].x * (P[j].y - P[k].y) +</div>
+<div class="line"><span class="lineno">  110</span>                               P[j].x * (P[k].y - P[i].y) +</div>
+<div class="line"><span class="lineno">  111</span>                               P[k].x * (P[i].y - P[j].y)));</div>
 <div class="line"><span class="lineno">  112</span>                C.<a class="code hl_variable" href="../../d8/dc8/struct_point.html#a2e1b5fb2b2a83571f5c0bc0f66a73cf7">y</a> = 0.5 * ((P[i].x * (P[j].x * P[j].x + P[j].y * P[j].y -</div>
-<div class="line"><span class="lineno">  113</span>                                        P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].x * P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].x - P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].y * P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].y) +</div>
-<div class="line"><span class="lineno">  114</span>                              P[j].x * (P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].x * P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].x + P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].y * P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].y -</div>
+<div class="line"><span class="lineno">  113</span>                                        P[k].x * P[k].x - P[k].y * P[k].y) +</div>
+<div class="line"><span class="lineno">  114</span>                              P[j].x * (P[k].x * P[k].x + P[k].y * P[k].y -</div>
 <div class="line"><span class="lineno">  115</span>                                        P[i].x * P[i].x - P[i].y * P[i].y) +</div>
-<div class="line"><span class="lineno">  116</span>                              P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].x * (P[i].x * P[i].x + P[i].y * P[i].y -</div>
+<div class="line"><span class="lineno">  116</span>                              P[k].x * (P[i].x * P[i].x + P[i].y * P[i].y -</div>
 <div class="line"><span class="lineno">  117</span>                                        P[j].x * P[j].x - P[j].y * P[j].y)) /</div>
-<div class="line"><span class="lineno">  118</span>                             (P[i].x * (P[j].y - P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].y) +</div>
-<div class="line"><span class="lineno">  119</span>                              P[j].x * (P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].y - P[i].y) +</div>
-<div class="line"><span class="lineno">  120</span>                              P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>].x * (P[i].y - P[j].y)));</div>
-<div class="line"><span class="lineno">  121</span>                R = (<a class="code hl_function" href="../../d0/d01/smallest__circle_8cpp.html#a3cbebd6f4d2cdf227663c67fe41ba12a">LenghtLine</a>(P[i], P[j]) * <a class="code hl_function" href="../../d0/d01/smallest__circle_8cpp.html#a3cbebd6f4d2cdf227663c67fe41ba12a">LenghtLine</a>(P[j], P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>]) *</div>
-<div class="line"><span class="lineno">  122</span>                     <a class="code hl_function" href="../../d0/d01/smallest__circle_8cpp.html#a3cbebd6f4d2cdf227663c67fe41ba12a">LenghtLine</a>(P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>], P[i])) /</div>
-<div class="line"><span class="lineno">  123</span>                    (4 * <a class="code hl_function" href="../../d0/d01/smallest__circle_8cpp.html#a94682a4a70d5906857ca09de5b9fb2cc">TriangleArea</a>(P[i], P[j], P[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>]));</div>
+<div class="line"><span class="lineno">  118</span>                             (P[i].x * (P[j].y - P[k].y) +</div>
+<div class="line"><span class="lineno">  119</span>                              P[j].x * (P[k].y - P[i].y) +</div>
+<div class="line"><span class="lineno">  120</span>                              P[k].x * (P[i].y - P[j].y)));</div>
+<div class="line"><span class="lineno">  121</span>                R = (<a class="code hl_function" href="../../d0/d01/smallest__circle_8cpp.html#a3cbebd6f4d2cdf227663c67fe41ba12a">LenghtLine</a>(P[i], P[j]) * <a class="code hl_function" href="../../d0/d01/smallest__circle_8cpp.html#a3cbebd6f4d2cdf227663c67fe41ba12a">LenghtLine</a>(P[j], P[k]) *</div>
+<div class="line"><span class="lineno">  122</span>                     <a class="code hl_function" href="../../d0/d01/smallest__circle_8cpp.html#a3cbebd6f4d2cdf227663c67fe41ba12a">LenghtLine</a>(P[k], P[i])) /</div>
+<div class="line"><span class="lineno">  123</span>                    (4 * <a class="code hl_function" href="../../d0/d01/smallest__circle_8cpp.html#a94682a4a70d5906857ca09de5b9fb2cc">TriangleArea</a>(P[i], P[j], P[k]));</div>
 <div class="line"><span class="lineno">  124</span>                <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d0/d01/smallest__circle_8cpp.html#aee6d48762c1dfb9f14627927f0c16fad">PointInCircle</a>(P, C, R)) {</div>
 <div class="line"><span class="lineno">  125</span>                    <span class="keywordflow">continue</span>;</div>
 <div class="line"><span class="lineno">  126</span>                }</div>
@@ -226,7 +226,6 @@ The function returns the radius of the circle and prints the coordinated of the 
 <div class="line"><span class="lineno">  150</span>    <span class="keywordflow">return</span> minR;</div>
 <div class="line"><span class="lineno">  151</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d50f1b8eb533b54721812d16a3699cc"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:170</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="asmallest__circle_8cpp_html_a3cbebd6f4d2cdf227663c67fe41ba12a"><div class="ttname"><a href="../../d0/d01/smallest__circle_8cpp.html#a3cbebd6f4d2cdf227663c67fe41ba12a">LenghtLine</a></div><div class="ttdeci">double LenghtLine(const Point &amp;A, const Point &amp;B)</div><div class="ttdef"><b>Definition:</b> smallest_circle.cpp:37</div></div>
@@ -237,7 +236,7 @@ The function returns the radius of the circle and prints the coordinated of the 
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d01/smallest__circle_8cpp_a0b0676df8e4da7a08c7ccaecea344903_cgraph.svg" width="492" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d01/smallest__circle_8cpp_a0b0676df8e4da7a08c7ccaecea344903_cgraph.svg" width="492" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -324,7 +323,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d01/smallest__circle_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="551"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d01/smallest__circle_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="100%" height="544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -422,7 +421,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d01/smallest__circle_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="100%" height="505"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d01/smallest__circle_8cpp_ae1a3968e7947464bee7714f6d43b7002_cgraph.svg" width="100%" height="466"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -457,7 +456,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d01/smallest__circle_8cpp_a0283886819c7c140a023582b7269e2d0_cgraph.svg" width="100%" height="505"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d01/smallest__circle_8cpp_a0283886819c7c140a023582b7269e2d0_cgraph.svg" width="100%" height="466"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -492,7 +491,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d01/smallest__circle_8cpp_a6d0455dd5c30adda100e95f0423c786e_cgraph.svg" width="100%" height="505"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d01/smallest__circle_8cpp_a6d0455dd5c30adda100e95f0423c786e_cgraph.svg" width="100%" height="466"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 

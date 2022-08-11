@@ -118,7 +118,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a336ac71f0d857269fe9a98058a3cd130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37ac126eabb0c3ce04047172abccca29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d05/class_min_heap.html#a37ac126eabb0c3ce04047172abccca29">deleteKey</a> (int i)</td></tr>
 <tr class="separator:a37ac126eabb0c3ce04047172abccca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef78f3384f5a0ae880ad0883d2d44b82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d05/class_min_heap.html#aef78f3384f5a0ae880ad0883d2d44b82">insertKey</a> (int <a class="el" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>)</td></tr>
+<tr class="memitem:aef78f3384f5a0ae880ad0883d2d44b82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d05/class_min_heap.html#aef78f3384f5a0ae880ad0883d2d44b82">insertKey</a> (int k)</td></tr>
 <tr class="separator:aef78f3384f5a0ae880ad0883d2d44b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -369,7 +369,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   61</span>    <span class="comment">// First insert the new key at the end</span></div>
 <div class="line"><span class="lineno">   62</span>    <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a>++;</div>
 <div class="line"><span class="lineno">   63</span>    <span class="keywordtype">int</span> i = <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> - 1;</div>
-<div class="line"><span class="lineno">   64</span>    <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i] = <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>;</div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i] = k;</div>
 <div class="line"><span class="lineno">   65</span> </div>
 <div class="line"><span class="lineno">   66</span>    <span class="comment">// Fix the min heap property if it is violated</span></div>
 <div class="line"><span class="lineno">   67</span>    <span class="keywordflow">while</span> (i != 0 &amp;&amp; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[parent(i)] &gt; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i]) {</div>
@@ -378,11 +378,10 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   70</span>    }</div>
 <div class="line"><span class="lineno">   71</span>}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d50f1b8eb533b54721812d16a3699cc"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:170</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d05/class_min_heap_aef78f3384f5a0ae880ad0883d2d44b82_cgraph.svg" width="395" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d05/class_min_heap_aef78f3384f5a0ae880ad0883d2d44b82_cgraph.svg" width="275" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -434,11 +433,11 @@ Here is the call graph for this function:</div>
 <p >to heapify a subtree with the root at given index</p>
 <p >A recursive method to heapify a subtree with the root at given index This method assumes that the subtrees are already heapified </p>
 <div class="fragment"><div class="line"><span class="lineno">  113</span>                              {</div>
-<div class="line"><span class="lineno">  114</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> = <a class="code hl_function" href="../../d2/d05/class_min_heap.html#aa8c6c141e3de664819686aa637e1afca">left</a>(i);</div>
+<div class="line"><span class="lineno">  114</span>    <span class="keywordtype">int</span> l = <a class="code hl_function" href="../../d2/d05/class_min_heap.html#aa8c6c141e3de664819686aa637e1afca">left</a>(i);</div>
 <div class="line"><span class="lineno">  115</span>    <span class="keywordtype">int</span> r = <a class="code hl_function" href="../../d2/d05/class_min_heap.html#ac760b85cf90265b8d674b942a43fb70e">right</a>(i);</div>
 <div class="line"><span class="lineno">  116</span>    <span class="keywordtype">int</span> smallest = i;</div>
-<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> &lt; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> &amp;&amp; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>] &lt; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i])</div>
-<div class="line"><span class="lineno">  118</span>        smallest = <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>;</div>
+<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">if</span> (l &lt; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> &amp;&amp; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[l] &lt; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[i])</div>
+<div class="line"><span class="lineno">  118</span>        smallest = l;</div>
 <div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (r &lt; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913">heap_size</a> &amp;&amp; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[r] &lt; <a class="code hl_variable" href="../../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e">harr</a>[smallest])</div>
 <div class="line"><span class="lineno">  120</span>        smallest = r;</div>
 <div class="line"><span class="lineno">  121</span>    <span class="keywordflow">if</span> (smallest != i) {</div>
@@ -448,11 +447,10 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  125</span>}</div>
 <div class="ttc" id="aclass_min_heap_html_aa8c6c141e3de664819686aa637e1afca"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#aa8c6c141e3de664819686aa637e1afca">MinHeap::left</a></div><div class="ttdeci">int left(int i)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:31</div></div>
 <div class="ttc" id="aclass_min_heap_html_ac760b85cf90265b8d674b942a43fb70e"><div class="ttname"><a href="../../d2/d05/class_min_heap.html#ac760b85cf90265b8d674b942a43fb70e">MinHeap::right</a></div><div class="ttdeci">int right(int i)</div><div class="ttdef"><b>Definition:</b> binaryheap.cpp:34</div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a995716bc040dc6cf32b5cb3df51c4529"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:175</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d05/class_min_heap_aaef438c1056492cb62c4a4d9035b5cad_cgraph.svg" width="427" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d05/class_min_heap_aaef438c1056492cb62c4a4d9035b5cad_cgraph.svg" width="314" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

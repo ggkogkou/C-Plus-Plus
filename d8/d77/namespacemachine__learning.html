@@ -863,19 +863,18 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  474</span>        <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;T&gt;</a> row;</div>
 <div class="line"><span class="lineno">  475</span>        row.resize(shape_b.second);</div>
 <div class="line"><span class="lineno">  476</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; shape_b.second; j++) {</div>
-<div class="line"><span class="lineno">  477</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> = 0; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> &lt; shape_a.second; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>++) {</div>
-<div class="line"><span class="lineno">  478</span>                row[j] += A[i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>] * B[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>][j];</div>
+<div class="line"><span class="lineno">  477</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> k = 0; k &lt; shape_a.second; k++) {</div>
+<div class="line"><span class="lineno">  478</span>                row[j] += A[i][k] * B[k][j];</div>
 <div class="line"><span class="lineno">  479</span>            }</div>
 <div class="line"><span class="lineno">  480</span>        }</div>
 <div class="line"><span class="lineno">  481</span>        C.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/push_back.html">push_back</a>(row);</div>
 <div class="line"><span class="lineno">  482</span>    }</div>
 <div class="line"><span class="lineno">  483</span>    <span class="keywordflow">return</span> C;  <span class="comment">// Return new resultant 2D vector</span></div>
 <div class="line"><span class="lineno">  484</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d50f1b8eb533b54721812d16a3699cc"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:170</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d77/namespacemachine__learning_a5342906d42b80fc6b6b3ad17bf00fcb9_cgraph.svg" width="510" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d77/namespacemachine__learning_a5342906d42b80fc6b6b3ad17bf00fcb9_cgraph.svg" width="390" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1431,13 +1430,13 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  159</span>            <span class="keywordtype">int</span> to_x = std::min&lt;int&gt;(W.<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>(), i + R + 1);</div>
 <div class="line"><span class="lineno">  160</span>            <span class="keywordtype">int</span> from_y = std::max&lt;int&gt;(0, j - R);</div>
 <div class="line"><span class="lineno">  161</span>            <span class="keywordtype">int</span> to_y = std::min&lt;int&gt;(W[0].size(), j + R + 1);</div>
-<div class="line"><span class="lineno">  162</span>            <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> = 0, m = 0;</div>
+<div class="line"><span class="lineno">  162</span>            <span class="keywordtype">int</span> l = 0, m = 0;</div>
 <div class="line"><span class="lineno">  163</span><span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><span class="lineno">  164</span><span class="preprocessor">#pragma omp parallel for reduction(+ : distance)</span></div>
 <div class="line"><span class="lineno">  165</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  166</span>            <span class="keywordflow">for</span> (<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> = from_x; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a> &lt; to_x; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>++) {      <span class="comment">// scan neighborhoor in x</span></div>
+<div class="line"><span class="lineno">  166</span>            <span class="keywordflow">for</span> (l = from_x; l &lt; to_x; l++) {      <span class="comment">// scan neighborhoor in x</span></div>
 <div class="line"><span class="lineno">  167</span>                <span class="keywordflow">for</span> (m = from_y; m &lt; to_y; m++) {  <span class="comment">// scan neighborhood in y</span></div>
-<div class="line"><span class="lineno">  168</span>                    <span class="keyword">auto</span> d = W[i][j] - W[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a>][m];</div>
+<div class="line"><span class="lineno">  168</span>                    <span class="keyword">auto</span> d = W[i][j] - W[l][m];</div>
 <div class="line"><span class="lineno">  169</span>                    <span class="keywordtype">double</span> d2 = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(d, 2).sum();</div>
 <div class="line"><span class="lineno">  170</span>                    distance += <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a>(d2);</div>
 <div class="line"><span class="lineno">  171</span>                    <span class="comment">// distance += d2;</span></div>
@@ -1459,7 +1458,6 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  187</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  188</span>}</div>
 <div class="ttc" id="abasic_ofstream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a></div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a995716bc040dc6cf32b5cb3df51c4529"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529">l</a></div><div class="ttdeci">double l(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:175</div></div>
 <div class="ttc" id="apow_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a></div><div class="ttdeci">T pow(T... args)</div></div>
 <div class="ttc" id="asqrt_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/math/sqrt.html">std::sqrt</a></div><div class="ttdeci">T sqrt(T... args)</div></div>
 <div class="ttc" id="astrerror_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/byte/strerror.html">std::strerror</a></div><div class="ttdeci">T strerror(T... args)</div></div>
@@ -1757,7 +1755,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><span class="lineno">  105</span>                                                                 {</div>
-<div class="line"><span class="lineno">  106</span>    <span class="keywordtype">int</span> j = 0, <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> = 0;</div>
+<div class="line"><span class="lineno">  106</span>    <span class="keywordtype">int</span> j = 0, k = 0;</div>
 <div class="line"><span class="lineno">  107</span>    <span class="keywordtype">int</span> num_out = W-&gt;<a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();  <span class="comment">// number of SOM output nodes</span></div>
 <div class="line"><span class="lineno">  108</span>    <span class="comment">// int num_features = x.size();  // number of data features</span></div>
 <div class="line"><span class="lineno">  109</span> </div>
@@ -1795,7 +1793,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d77/namespacemachine__learning_aa6aac06ccf128b0a9c55c9ee1a8e5631_cgraph.svg" width="472" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d77/namespacemachine__learning_aa6aac06ccf128b0a9c55c9ee1a8e5631_cgraph.svg" width="352" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

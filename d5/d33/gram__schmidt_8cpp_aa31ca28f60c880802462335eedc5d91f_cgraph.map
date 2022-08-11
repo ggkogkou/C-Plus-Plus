@@ -1,11 +1,6 @@
 <map id="linear_algebra::gram_schmidt::gram_schmidt" name="linear_algebra::gram_schmidt::gram_schmidt">
-<area shape="rect" id="node1" title=" " alt="" coords="5,99,171,141"/>
-<area shape="rect" id="node2" href="$d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc" title="Another test function." alt="" coords="269,56,307,83"/>
-<area shape="rect" id="node5" href="$d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529" title="Another test function." alt="" coords="269,107,307,133"/>
-<area shape="rect" id="node7" href="$d5/d33/gram__schmidt_8cpp.html#a46e459aff5eafffb5ad9ceb129b4d274" title=" " alt="" coords="219,182,357,223"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="445,5,517,32"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="445,56,516,83"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="448,107,513,133"/>
-<area shape="rect" id="node8" href="$d5/d33/gram__schmidt_8cpp.html#aed4d308f46ca1d91e348ca260ec1d2fb" title=" " alt="" coords="405,182,556,223"/>
-<area shape="rect" id="node9" href="$d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35" title=" " alt="" coords="604,189,760,216"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,29,171,71"/>
+<area shape="rect" id="node2" href="$d5/d33/gram__schmidt_8cpp.html#a46e459aff5eafffb5ad9ceb129b4d274" title=" " alt="" coords="219,29,357,71"/>
+<area shape="rect" id="node3" href="$d5/d33/gram__schmidt_8cpp.html#aed4d308f46ca1d91e348ca260ec1d2fb" title=" " alt="" coords="405,29,556,71"/>
+<area shape="rect" id="node4" href="$d8/d77/namespacemachine__learning.html#a6f1c98c016ad34ff3d9f39372161bd35" title=" " alt="" coords="604,37,760,63"/>
 </map>

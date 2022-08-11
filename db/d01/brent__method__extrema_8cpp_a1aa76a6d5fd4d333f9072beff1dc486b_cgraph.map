@@ -1,7 +1,5 @@
 <map id="get_minima" name="get_minima">
-<area shape="rect" id="node1" title="Get the real root of a function in the given interval." alt="" coords="5,56,95,83"/>
-<area shape="rect" id="node2" href="$d4/d18/composite__simpson__rule_8cpp.html#a3de2b7b41a8e4b07da05298510d17ed2" title="A function f(x) that will be used to test the method." alt="" coords="163,5,201,32"/>
-<area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="269,56,340,83"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="143,107,221,133"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="272,5,337,32"/>
+<area shape="rect" id="node1" title="Get the real root of a function in the given interval." alt="" coords="5,31,95,57"/>
+<area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="147,5,217,32"/>
+<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/swap.html#" title=" " alt="" coords="143,56,221,83"/>
 </map>

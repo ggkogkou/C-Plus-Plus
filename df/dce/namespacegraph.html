@@ -698,12 +698,12 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   54</span><span class="comment"></span>        int32_t curr_weight = 0;</div>
 <div class="line"><span class="lineno">   55</span><span class="comment"></span> </div>
 <div class="line"><span class="lineno">   56</span><span class="comment">        //// compute current path weight</span></div>
-<div class="line"><span class="lineno">   57</span><span class="comment"></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> = src;</div>
+<div class="line"><span class="lineno">   57</span><span class="comment"></span>        <span class="keywordtype">int</span> k = src;</div>
 <div class="line"><span class="lineno">   58</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i : vtx) {</div>
-<div class="line"><span class="lineno">   59</span>            curr_weight += (*cities)[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>][i];</div>
-<div class="line"><span class="lineno">   60</span>            <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> = i;</div>
+<div class="line"><span class="lineno">   59</span>            curr_weight += (*cities)[k][i];</div>
+<div class="line"><span class="lineno">   60</span>            k = i;</div>
 <div class="line"><span class="lineno">   61</span>        }</div>
-<div class="line"><span class="lineno">   62</span>        curr_weight += (*cities)[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>][src];</div>
+<div class="line"><span class="lineno">   62</span>        curr_weight += (*cities)[k][src];</div>
 <div class="line"><span class="lineno">   63</span><span class="comment"></span> </div>
 <div class="line"><span class="lineno">   64</span><span class="comment">        //// update minimum</span></div>
 <div class="line"><span class="lineno">   65</span><span class="comment"></span>        min_path = <a class="code hl_functionRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a>(min_path, curr_weight);</div>
@@ -713,7 +713,6 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> min_path;</div>
 <div class="line"><span class="lineno">   70</span>}</div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d50f1b8eb533b54721812d16a3699cc"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:170</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
 <div class="ttc" id="anext_permutation_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/next_permutation.html">std::next_permutation</a></div><div class="ttdeci">T next_permutation(T... args)</div></div>
@@ -721,7 +720,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_ab7706341d006e20d1ae58274187a3346_cgraph.svg" width="510" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/namespacegraph_ab7706341d006e20d1ae58274187a3346_cgraph.svg" width="390" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

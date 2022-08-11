@@ -1,9 +1,4 @@
 <map id="mergeSort" name="mergeSort">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,88,57"/>
-<area shape="rect" id="node2" href="$d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529" title="Another test function." alt="" coords="243,5,281,32"/>
-<area shape="rect" id="node4" href="$d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73" title=" " alt="" coords="136,56,195,83"/>
-<area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="333,5,398,32"/>
-<area shape="rect" id="node5" href="$d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc" title="Another test function." alt="" coords="243,56,281,83"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="329,56,401,83"/>
-<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="330,107,401,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,29,88,56"/>
+<area shape="rect" id="node2" href="$d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73" title=" " alt="" coords="136,29,195,56"/>
 </map>

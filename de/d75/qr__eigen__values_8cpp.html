@@ -356,21 +356,14 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   66</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; R1; i++) {</div>
 <div class="line"><span class="lineno">   67</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; C2; j++) {</div>
 <div class="line"><span class="lineno">   68</span>            OUT[0][i][j] = 0.f;</div>
-<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> = 0; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a> &lt; C1; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>++) {</div>
-<div class="line"><span class="lineno">   70</span>                OUT[0][i][j] += A[i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>] * B[<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a>][j];</div>
+<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; C1; k++) {</div>
+<div class="line"><span class="lineno">   70</span>                OUT[0][i][j] += A[i][k] * B[k][j];</div>
 <div class="line"><span class="lineno">   71</span>            }</div>
 <div class="line"><span class="lineno">   72</span>        }</div>
 <div class="line"><span class="lineno">   73</span>    }</div>
 <div class="line"><span class="lineno">   74</span>}</div>
-<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a6d50f1b8eb533b54721812d16a3699cc"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc">k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:170</div></div>
 <div class="ttc" id="aperror_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/c/perror.html">std::perror</a></div><div class="ttdeci">T perror(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d75/qr__eigen__values_8cpp_abb8bf4c55e10685a5eb2ad3797fde1ae_cgraph.svg" width="290" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1440a7779ac56f47a3f355ce4a8c7da0" name="a1440a7779ac56f47a3f355ce4a8c7da0"></a>
@@ -420,7 +413,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d75/qr__eigen__values_8cpp_a1440a7779ac56f47a3f355ce4a8c7da0_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d75/qr__eigen__values_8cpp_a1440a7779ac56f47a3f355ce4a8c7da0_cgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -482,7 +475,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d75/qr__eigen__values_8cpp_a0283886819c7c140a023582b7269e2d0_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d75/qr__eigen__values_8cpp_a0283886819c7c140a023582b7269e2d0_cgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 

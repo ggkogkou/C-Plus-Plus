@@ -1,8 +1,5 @@
 <map id="hashing::sha1::hash_bs" name="hashing::sha1::hash_bs">
-<area shape="rect" id="node1" title="The SHA&#45;1 algorithm itself, taking in a bytestring." alt="" coords="5,56,165,83"/>
+<area shape="rect" id="node1" title="The SHA&#45;1 algorithm itself, taking in a bytestring." alt="" coords="5,31,165,57"/>
 <area shape="rect" id="node2" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="213,5,336,32"/>
 <area shape="rect" id="node3" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/algorithm/copy.html#" title=" " alt="" coords="237,56,313,83"/>
-<area shape="rect" id="node4" href="$d4/d18/composite__simpson__rule_8cpp.html#ac84831571c8f3d0bca83c1747a32e8d6" title="Another test function." alt="" coords="255,107,294,133"/>
-<area shape="rect" id="node5" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/exp.html#" title=" " alt="" coords="385,81,455,108"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="384,132,456,159"/>
 </map>

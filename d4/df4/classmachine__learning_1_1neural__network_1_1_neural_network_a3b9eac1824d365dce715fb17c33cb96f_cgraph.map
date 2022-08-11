@@ -1,16 +1,11 @@
 <map id="machine_learning::neural_network::NeuralNetwork::single_predict" name="machine_learning::neural_network::NeuralNetwork::single_predict">
-<area shape="rect" id="node1" title=" " alt="" coords="5,82,176,138"/>
-<area shape="rect" id="node2" href="$d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a361a45f3c3d8347d79103bf182d0570b" title=" " alt="" coords="224,82,417,138"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,57,176,113"/>
+<area shape="rect" id="node2" href="$d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a361a45f3c3d8347d79103bf182d0570b" title=" " alt="" coords="224,57,417,113"/>
 <area shape="rect" id="node3" href="$d8/d77/namespacemachine__learning.html#ad0bdc88e5f1be47c46c0f0c8ebf754bb" title=" " alt="" coords="472,5,635,47"/>
 <area shape="rect" id="node4" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/emplace_back.html#" title=" " alt="" coords="465,71,641,98"/>
-<area shape="rect" id="node5" href="$d4/d18/composite__simpson__rule_8cpp.html#a995716bc040dc6cf32b5cb3df51c4529" title="Another test function." alt="" coords="534,122,573,149"/>
-<area shape="rect" id="node7" href="$d8/d77/namespacemachine__learning.html#a5342906d42b80fc6b6b3ad17bf00fcb9" title=" " alt="" coords="465,213,641,239"/>
-<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/log.html#" title=" " alt="" coords="734,82,799,109"/>
-<area shape="rect" id="node8" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="731,133,803,159"/>
-<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="732,183,801,210"/>
-<area shape="rect" id="node10" href="$d8/d77/namespacemachine__learning.html#aa4bbf61e65f8cd297255fa94b983d078" title=" " alt="" coords="692,235,841,276"/>
-<area shape="rect" id="node11" href="$d4/d18/composite__simpson__rule_8cpp.html#a6d50f1b8eb533b54721812d16a3699cc" title="Another test function." alt="" coords="747,301,786,327"/>
-<area shape="rect" id="node14" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="689,351,844,378"/>
-<area shape="rect" id="node12" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/pow.html#" title=" " alt="" coords="892,275,964,302"/>
-<area shape="rect" id="node13" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/numeric/math/sqrt.html#" title=" " alt="" coords="893,326,963,353"/>
+<area shape="rect" id="node5" href="$d8/d77/namespacemachine__learning.html#a5342906d42b80fc6b6b3ad17bf00fcb9" title=" " alt="" coords="465,122,641,149"/>
+<area shape="rect" id="node6" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="731,42,803,69"/>
+<area shape="rect" id="node7" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/utility/program/exit.html#" title=" " alt="" coords="732,93,801,119"/>
+<area shape="rect" id="node8" href="$d8/d77/namespacemachine__learning.html#aa4bbf61e65f8cd297255fa94b983d078" title=" " alt="" coords="692,144,841,185"/>
+<area shape="rect" id="node9" href="/Users/runner/work/C-Plus-Plus/C-Plus-Plus/doc/cppreference-doxygen-web.tag.xml$cpp/container/vector/push_back.html#" title=" " alt="" coords="689,210,844,237"/>
 </map>
