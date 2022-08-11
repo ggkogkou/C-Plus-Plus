@@ -52,49 +52,49 @@
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a4649fc2c5d09dc58608cd9299db9946f" target="_top" xlink:title="Utility function that adds a new element at the end of the list.">
-<polygon fill="white" stroke="black" points="143,-98.5 143,-128.5 259,-128.5 259,-98.5 143,-98.5"/>
-<text text-anchor="start" x="151" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
-<text text-anchor="middle" x="201" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::insert</text>
+<polygon fill="white" stroke="black" points="143,-147.5 143,-177.5 259,-177.5 259,-147.5 143,-147.5"/>
+<text text-anchor="start" x="151" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
+<text text-anchor="middle" x="201" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::insert</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M107.05,-113.5C114.18,-113.5 123.17,-113.5 132.74,-113.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="132.87,-117 142.87,-113.5 132.87,-110 132.87,-117"/>
+<path fill="none" stroke="midnightblue" d="M107.17,-121.38C117.33,-126.41 130.87,-133.01 143,-138.5 146.58,-140.12 150.31,-141.77 154.06,-143.41"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="152.82,-146.68 163.39,-147.42 155.59,-140.25 152.82,-146.68"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#a8b20ca89a0346c8d4193936481528c70" target="_top" xlink:title="Utility function for reversing a list.">
-<polygon fill="white" stroke="black" points="143,-49.5 143,-79.5 259,-79.5 259,-49.5 143,-49.5"/>
-<text text-anchor="start" x="151" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
-<text text-anchor="middle" x="201" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::reverseList</text>
+<polygon fill="white" stroke="black" points="143,-98.5 143,-128.5 259,-128.5 259,-98.5 143,-98.5"/>
+<text text-anchor="start" x="151" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
+<text text-anchor="middle" x="201" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::reverseList</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node2&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M107.17,-105.62C117.33,-100.59 130.87,-93.99 143,-88.5 146.58,-86.88 150.31,-85.23 154.06,-83.59"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="155.59,-86.75 163.39,-79.58 152.82,-80.32 155.59,-86.75"/>
+<path fill="none" stroke="midnightblue" d="M107.05,-113.5C114.18,-113.5 123.17,-113.5 132.74,-113.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="132.87,-117 142.87,-113.5 132.87,-110 132.87,-117"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#ab2d20da40d800897c31a649799d5e43d" target="_top" xlink:title="Utility function to find the top element of the list.">
-<polygon fill="white" stroke="black" points="143,-147.5 143,-177.5 259,-177.5 259,-147.5 143,-147.5"/>
-<text text-anchor="start" x="151" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
-<text text-anchor="middle" x="201" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::top</text>
+<polygon fill="white" stroke="black" points="143,-49.5 143,-79.5 259,-79.5 259,-49.5 143,-49.5"/>
+<text text-anchor="start" x="151" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
+<text text-anchor="middle" x="201" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::top</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node2&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M107.23,-120.95C117.41,-125.73 130.96,-132.05 143,-137.5 147.16,-139.38 151.49,-141.32 155.83,-143.25"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="154.72,-146.58 165.28,-147.42 157.55,-140.18 154.72,-146.58"/>
+<path fill="none" stroke="midnightblue" d="M107.17,-105.62C117.33,-100.59 130.87,-93.99 143,-88.5 146.58,-86.88 150.31,-85.23 154.06,-83.59"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="155.59,-86.75 163.39,-79.58 152.82,-80.32 155.59,-86.75"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
@@ -107,7 +107,7 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node9 -->
-<g id="edge10" class="edge">
+<g id="edge9" class="edge">
 <title>Node2&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M96.12,-103.53C103.81,-87.92 120.62,-57.62 143,-39.5 144.56,-38.23 146.21,-37.02 147.9,-35.87"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="150,-38.69 156.78,-30.55 146.4,-32.69 150,-38.69"/>
@@ -116,44 +116,38 @@
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="../../d1/def/classdata__structures_1_1linked__list_1_1list.html#ae8424a4fce3d483f7c85d6f6a5c79a1a" target="_top" xlink:title="Utility function that checks if the list is empty.">
-<polygon fill="white" stroke="black" points="295,-145.5 295,-175.5 411,-175.5 411,-145.5 295,-145.5"/>
-<text text-anchor="start" x="303" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
-<text text-anchor="middle" x="353" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::isEmpty</text>
+<polygon fill="white" stroke="black" points="295,-76.5 295,-106.5 411,-106.5 411,-76.5 295,-76.5"/>
+<text text-anchor="start" x="303" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">data_structures::linked</text>
+<text text-anchor="middle" x="353" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">_list::list::isEmpty</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M249.87,-128.5C263.95,-132.91 279.49,-137.78 294.12,-142.36"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="293.48,-145.83 304.07,-145.48 295.57,-139.15 293.48,-145.83"/>
+<path fill="none" stroke="midnightblue" d="M238.96,-147.38C245.66,-144.51 252.57,-141.47 259,-138.5 277.43,-129.98 297.57,-119.9 314.38,-111.26"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="316.07,-114.33 323.35,-106.63 312.86,-108.11 316.07,-114.33"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a target="_blank" xlink:href="http://en.cppreference.com/w/cpp/error/exception/what.html#" xlink:title=" ">
-<polygon fill="white" stroke="black" points="301,-106 301,-125 405,-125 405,-106 301,-106"/>
-<text text-anchor="middle" x="353" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">std::bad_alloc::what</text>
+<polygon fill="white" stroke="black" points="301,-153 301,-172 405,-172 405,-153 301,-153"/>
+<text text-anchor="middle" x="353" y="-160" font-family="Helvetica,sans-Serif" font-size="10.00">std::bad_alloc::what</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node4&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M259.14,-114.26C269.44,-114.4 280.23,-114.54 290.65,-114.68"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="290.88,-118.19 300.92,-114.82 290.97,-111.19 290.88,-118.19"/>
+<path fill="none" stroke="midnightblue" d="M259.14,-162.5C269.44,-162.5 280.23,-162.5 290.65,-162.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="290.92,-166 300.92,-162.5 290.92,-159 290.92,-166"/>
 </g>
 <!-- Node8&#45;&gt;Node5 -->
 <g id="edge8" class="edge">
 <title>Node8&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M259.14,-161.74C267.38,-161.63 275.92,-161.51 284.34,-161.4"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="284.57,-164.9 294.53,-161.27 284.48,-157.9 284.57,-164.9"/>
-</g>
-<!-- Node8&#45;&gt;Node6 -->
-<g id="edge9" class="edge">
-<title>Node8&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M249.87,-147.5C269.88,-141.23 292.86,-134.03 311.95,-128.05"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="313.05,-131.37 321.54,-125.04 310.95,-124.69 313.05,-131.37"/>
+<path fill="none" stroke="midnightblue" d="M259.14,-74.78C267.47,-76.28 276.11,-77.84 284.62,-79.37"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="284.06,-82.83 294.53,-81.15 285.3,-75.94 284.06,-82.83"/>
 </g>
 </g>
 </svg>

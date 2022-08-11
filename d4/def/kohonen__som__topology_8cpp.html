@@ -318,14 +318,14 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  379</span>        }</div>
 <div class="line"><span class="lineno">  380</span>        <span class="keywordflow">if</span> (i &lt; num_out) {  <span class="comment">// only add new arrays if i &lt; num_out</span></div>
 <div class="line"><span class="lineno">  381</span>            W[i] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::valarray&lt;double&gt;</a>&gt;(num_out);</div>
-<div class="line"><span class="lineno">  382</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; num_out; k++) {</div>
-<div class="line"><span class="lineno">  383</span>                W[i][k] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
+<div class="line"><span class="lineno">  382</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> &lt; num_out; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>++) {</div>
+<div class="line"><span class="lineno">  383</span>                W[i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
 <div class="line"><span class="lineno">  384</span><span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><span class="lineno">  385</span><span class="preprocessor">#pragma omp for</span></div>
 <div class="line"><span class="lineno">  386</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">  387</span>                <span class="keywordflow">for</span> (j = 0; j &lt; features; j++) {</div>
 <div class="line"><span class="lineno">  388</span>                    <span class="comment">// preallocate with random initial weights</span></div>
-<div class="line"><span class="lineno">  389</span>                    W[i][k][j] = <a class="code hl_function" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a>(-10, 10);</div>
+<div class="line"><span class="lineno">  389</span>                    W[i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>][j] = <a class="code hl_function" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a>(-10, 10);</div>
 <div class="line"><span class="lineno">  390</span>                }</div>
 <div class="line"><span class="lineno">  391</span>            }</div>
 <div class="line"><span class="lineno">  392</span>        }</div>
@@ -337,6 +337,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  398</span>    <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#ac43d294e21a0c4fa33c53757df054576">kohonen_som</a>(X, &amp;W, 1e-4);      <span class="comment">// train the SOM</span></div>
 <div class="line"><span class="lineno">  399</span>    <a class="code hl_function" href="../../d8/d77/namespacemachine__learning.html#aa72a53c88203fde278f1fe6c3afe5b07">save_u_matrix</a>(<span class="stringliteral">&quot;w12.csv&quot;</span>, W);   <span class="comment">// save the resultant weights</span></div>
 <div class="line"><span class="lineno">  400</span>}</div>
+<div class="ttc" id="acomposite__simpson__rule_8cpp_html_a1b74d828b33760094906797042b89442"><div class="ttname"><a href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">numerical_methods::simpson_method::k</a></div><div class="ttdeci">double k(double x)</div><div class="ttdoc">Another test function.</div><div class="ttdef"><b>Definition:</b> composite_simpson_rule.cpp:117</div></div>
 <div class="ttc" id="adata__structures_2sparse__table_8cpp_html_a10f3ffb3f6f7e1b83d556b9c8de89a5d"><div class="ttname"><a href="../../d6/d42/data__structures_2sparse__table_8cpp.html#a10f3ffb3f6f7e1b83d556b9c8de89a5d">data_structures::sparse_table::N</a></div><div class="ttdeci">constexpr uint32_t N</div><div class="ttdoc">A struct to represent sparse table for min() as their invariant function, for the given array A....</div><div class="ttdef"><b>Definition:</b> sparse_table.cpp:47</div></div>
 <div class="ttc" id="agroup__machine__learning_html_gabc90175770bf0d5853c466e14993a08c"><div class="ttname"><a href="../../d9/d66/group__machine__learning.html#gabc90175770bf0d5853c466e14993a08c">save_2d_data</a></div><div class="ttdeci">int save_2d_data(const char *fname, const std::vector&lt; std::valarray&lt; double &gt; &gt; &amp;X)</div><div class="ttdef"><b>Definition:</b> kohonen_som_topology.cpp:65</div></div>
 <div class="ttc" id="agroup__machine__learning_html_gaf5ce14f026d6d231bef29161bac2b485"><div class="ttname"><a href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a></div><div class="ttdeci">double _random(double a, double b)</div><div class="ttdef"><b>Definition:</b> kohonen_som_topology.cpp:53</div></div>
@@ -387,14 +388,14 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  461</span>        }</div>
 <div class="line"><span class="lineno">  462</span>        <span class="keywordflow">if</span> (i &lt; num_out) {  <span class="comment">// only add new arrays if i &lt; num_out</span></div>
 <div class="line"><span class="lineno">  463</span>            W[i] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::valarray&lt;double&gt;</a>&gt;(num_out);</div>
-<div class="line"><span class="lineno">  464</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; num_out; k++) {</div>
-<div class="line"><span class="lineno">  465</span>                W[i][k] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
+<div class="line"><span class="lineno">  464</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> &lt; num_out; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>++) {</div>
+<div class="line"><span class="lineno">  465</span>                W[i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
 <div class="line"><span class="lineno">  466</span><span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><span class="lineno">  467</span><span class="preprocessor">#pragma omp for</span></div>
 <div class="line"><span class="lineno">  468</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">  469</span>                <span class="keywordflow">for</span> (j = 0; j &lt; features; j++) {</div>
 <div class="line"><span class="lineno">  470</span>                    <span class="comment">// preallocate with random initial weights</span></div>
-<div class="line"><span class="lineno">  471</span>                    W[i][k][j] = <a class="code hl_function" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a>(-10, 10);</div>
+<div class="line"><span class="lineno">  471</span>                    W[i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>][j] = <a class="code hl_function" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a>(-10, 10);</div>
 <div class="line"><span class="lineno">  472</span>                }</div>
 <div class="line"><span class="lineno">  473</span>            }</div>
 <div class="line"><span class="lineno">  474</span>        }</div>
@@ -448,14 +449,14 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  547</span>        }</div>
 <div class="line"><span class="lineno">  548</span>        <span class="keywordflow">if</span> (i &lt; num_out) {  <span class="comment">// only add new arrays if i &lt; num_out</span></div>
 <div class="line"><span class="lineno">  549</span>            W[i] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::valarray&lt;double&gt;</a>&gt;(num_out);</div>
-<div class="line"><span class="lineno">  550</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; num_out; k++) {</div>
-<div class="line"><span class="lineno">  551</span>                W[i][k] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
+<div class="line"><span class="lineno">  550</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a> &lt; num_out; <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>++) {</div>
+<div class="line"><span class="lineno">  551</span>                W[i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>] = <a class="code hl_classRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/valarray.html">std::valarray&lt;double&gt;</a>(features);</div>
 <div class="line"><span class="lineno">  552</span><span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><span class="lineno">  553</span><span class="preprocessor">#pragma omp for</span></div>
 <div class="line"><span class="lineno">  554</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">  555</span>                <span class="keywordflow">for</span> (j = 0; j &lt; features; j++) {</div>
 <div class="line"><span class="lineno">  556</span>                    <span class="comment">// preallocate with random initial weights</span></div>
-<div class="line"><span class="lineno">  557</span>                    W[i][k][j] = <a class="code hl_function" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a>(-10, 10);</div>
+<div class="line"><span class="lineno">  557</span>                    W[i][<a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a1b74d828b33760094906797042b89442">k</a>][j] = <a class="code hl_function" href="../../d9/d66/group__machine__learning.html#gaf5ce14f026d6d231bef29161bac2b485">_random</a>(-10, 10);</div>
 <div class="line"><span class="lineno">  558</span>                }</div>
 <div class="line"><span class="lineno">  559</span>            }</div>
 <div class="line"><span class="lineno">  560</span>        }</div>
